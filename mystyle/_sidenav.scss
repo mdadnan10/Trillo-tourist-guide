@@ -1,0 +1,64 @@
+@import "./variables";
+@import "./mixin";
+
+.sideclose a {
+  padding: 13px 0 13px 0;
+  font-size: $size14;
+  text-decoration: none;
+  color: $fcolor;
+}
+
+.sideclose a:hover {
+  color: wheat;
+}
+
+.sidenavlink a {
+  padding: 13px 13px 13px 22px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: $size14;
+  color: $fcolor;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenavlink a.active {
+  background: $anchortag;
+}
+
+.sidenavlink a:hover {
+  background-color: $hovercolor;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 34px;
+  margin-left: 50px;
+}
+
+.navicon {
+  float: left;
+  padding: 14px 10px 0px 12px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+
+/*-----index footer-------*/
+.index-copy-right {
+  color: $fcolor;
+  font-size: $size13;
+  text-align: center;
+  position: absolute;
+  bottom: 7px;
+}

@@ -1,0 +1,24 @@
+@import "./variables";
+
+@mixin trendingboxesnavigationicon {
+     background-color: $anglebackground;
+     width: 33px;
+     height: 33px;
+     border-radius: 50px !important;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     outline: none;
+}
+
+@mixin autoslidernavigationicon {
+     background-color: $anglebackground;
+     font-size: 25px;
+     color: $anglecolor;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     height: 33px;
+     width: 33px;
+     border-radius: 50px !important;
+}
