@@ -48,7 +48,9 @@
 
 </head>
 
-<body>
+<body onload="loadingfunction()">
+
+  <div id="loader"></div>
 
   <!--_________________________start of navbar___________________________-->
   <nav>
@@ -202,6 +204,13 @@
     </footer>
 
   </div>
+  <script>
+    var preloader = document.getElementById('loader');
+
+    function loadingfunction() {
+      preloader.style.display = 'none';
+    };
+  </script>
 
 </body>
 
