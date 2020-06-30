@@ -41,7 +41,7 @@
   <script type="text/javascript" src="js/script.js"></script>
 
   <!--------custom css------>
-  <link rel="stylesheet" type="text/css" href="mystyle/style.css">
+  <link rel="stylesheet" type="text/css" href="style/styles.css">
 
   <!-----owl carousel and bootstrap----->
   <link rel="stylesheet" type="text/css" href="OwlCarousel/owl.carousel.min.css">
@@ -66,7 +66,7 @@
 
 <body onload="loadingfunction()">
 
-  <div id="loader"></div>
+  <div id="car-loader"></div>
 
   <!--_________________________start of navbar___________________________-->
   <nav>
@@ -109,16 +109,229 @@
 
   <div id="main">
 
-  </div>
+    <!-- home main image and form for booking car  -->
+    <section>
+      <div class="home-display">
+        <img src="./images/rentalhome.jpg" alt="home page banner">
 
+        <div class="booking-form">
+          <h4>Book Your Car Today!</h4>
+
+          <form>
+            <select class="form-control input">
+              <option>Select your car</option>
+              <option>BMW</option>
+              <option>Farrari</option>
+              <option>Audi</option>
+              <option>Toyota</option>
+            </select>
+
+            <select class="form-control input">
+              <option>Pick-up location</option>
+              <option>Jayadev Vihar</option>
+              <option>Baramunda</option>
+              <option>Khandagiri</option>
+              <option>Patia</option>
+              <option>Saheed Nagar</option>
+              <option>Rasulgarh</option>
+            </select>
+
+            <div class="pick-up">
+              <p>Pick-up Date :</p>
+              <input type="date" name="date" class="form-control date" required="required">
+            </div>
+            <div class="return">
+              <p>Return Date :</p>
+              <input type="date" name="date" class="form-control date" required="required">
+            </div>
+
+
+            <input type="text" class="form-control input" placeholder="Your name" required="required">
+
+            <input type="email" class="form-control input" placeholder="Email address" required="required">
+
+            <input type="tel" class="form-control input" placeholder="Phone number" required="required">
+
+            <button type="submit" onclick="carbooking()">CONFIRM CAR BOOKING</button>
+            <form>
+
+            </form>
+        </div>
+
+        <div class="home-text">
+          <p>THE ROYAL ESSENCE OF JOURNEY</p>
+          <h2>RELAXED JOURNEY EVER</h2>
+          <span class="slogan-text">A space of your comfort</span>
+          <br>
+          <button type="submit">RENT CAR NOW</button>
+        </div>
+      </div>
+
+    </section>
+    <!-- end of home main image and booking car form  -->
+
+    <!-- abous us and ad video section  -->
+    <div class="about-us">
+      <h4>ABOUT US</h4>
+      <span class="car-line"><i class="fad fa-car"></i></span>
+      <div class="inner-about-us">
+        <div class="aboutus-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nulla maiores corporis. Ullam soluta distinctio
+          ipsum sed quibusdam eius iusto cupiditate earum nihil, fugiat tempore laboriosam.
+          <br><br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil ad necessitatibus asperiores
+          exercitationem alias illum obcaecati aperiam facere.
+          <br>
+          <button type="submit">BOOK A CAR</button>
+          <button type="submit">CONTACT US</button>
+
+        </div>
+
+        <video controls>
+          <source src="./video/carrentalad.mp4" type="video/mp4">
+          <source src="./video/carrentalad.ogg" type="video/ogg">
+        </video>
+
+      </div>
+    </div>
+    <!-- end of about us and ad video  -->
+
+    <!-- our services and section  -->
+    <div class="our-services">
+      <h4>What Services we offer to our clients</h4>
+      <span class="car-line"><i class="fad fa-car"></i></span>
+      <span class="serivice-heading-para">Who are in extremely love with eco friendly system.</span>
+
+      <div class="box-line">
+        <div class="box">
+          <h3><i class="fal fa-user"></i> Expert Technicians</h3>
+          <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+        </div>
+        <div class="box">
+          <h3><i class="fal fa-file-certificate"></i> Professional Service</h3>
+          <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+        </div>
+        <div class="box">
+          <h3><i class="fal fa-phone-rotary"></i> Great Support</h3>
+          <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+        </div>
+      </div>
+
+      <div class="box-line">
+        <div class="box">
+          <h3><i class="fal fa-life-ring"></i> Life Insurance</h3>
+          <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+        </div>
+        <div class="box">
+          <h3><i class="fal fa-car-wash"></i> Car Wash</h3>
+          <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+        </div>
+        <div class="box">
+          <h3><i class="fal fa-phone-alt"></i> Call Driver</h3>
+          <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- end of our service section  -->
+
+    <!-- globally connected network  -->
+    <div class="globally-connected">
+      <div class="globally-image">
+        <img src="./images/globallyconnected.jpg" alt="Globally connected">
+      </div>
+
+      <div class="globally-text">
+        <h4>Globally Connected <br> by Large Network</h4>
+        <h5>We are here to listen from you deliver exellence</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam ut expedita veritatis esse libero,
+          in molestias eligendi, id et consequatur dolorem corrupti veniam.</p>
+        <button type="submit">GET DETAILS</button>
+      </div>
+
+    </div>
+    <!-- end of globally connected section  -->
+
+    <!-- a auto slider page banner  -->
+    <div class="car-page-banner">
+      <h2>A page Banner Will Be Added Here </h2>
+    </div>
+    <!--end of a auto slider page banner  -->
+
+    <!-- our happy clients stock and offices  -->
+    <div class="happy-serivices">
+      <div class="clients-bgimg"></div>
+
+      <div class="happy-clients">
+        <i class="fal fa-smile"></i>
+        <h4>550+</h4>
+        <p>HAPPY CLIENTS</p>
+      </div>
+
+      <div class="cars-instock">
+        <i class="fal fa-car"></i>
+        <h4>250+</h4>
+        <p>CARS IN STOCK</p>
+      </div>
+
+      <div class="office-incities">
+        <i class="fal fa-car-building"></i>
+        <h4>50+</h4>
+        <p>OFFICE IN CITIES</p>
+      </div>
+
+    </div>
+    <!-- endour happy clients stock and offices  -->
+
+    <!-- different car model for clients  -->
+    <div class="select-car-model">
+      <h2>Different Car model will be added here </h2>
+    </div>
+    <!--end of different car model for clients -->
+
+    <!-- our price for monthly pack customer   -->
+    <div class="monthly-pack">
+      <h2>Our Price For Monthly Pack Customer will be added here </h2>
+    </div>
+    <!--end of our price for monthly pack customer  -->
+
+    <!-- testimonials   -->
+    <div class="testimonials">
+      <h2>Review by our customer will be added here </h2>
+    </div>
+    <!--end of testimonials  -->
+
+    <!-- support teams  -->
+    <div class="support-team">
+      <div class="support-bgimg"></div>
+      <div class="inner-support">
+        <h2>Experience Great Support</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestias exercitationem architecto culpa
+          nobis necessitatibus, soluta veniam deserunt modi blanditiis dignissimos vero distinctio quidem consequatur
+          voluptatum impedit alias expedita amet. Et enim saepe dolorum voluptatibus possimus, similique distinctio
+          sapiente. Quo.</p>
+        <button type="submit">REACH OUR SUPPORT TEAM</button>
+      </div>
+    </div>
+    <!--end of support team  -->
+
+  </div>
   <!-- my preloader java script -->
   <script>
-    var preloader = document.getElementById('loader');
+    var preloader = document.getElementById('car-loader');
 
     function loadingfunction() {
       preloader.style.display = 'none';
     };
   </script>
+
+  <!-- after submitting car booking form  -->
+  <script>
+    function carbooking() {
+      alert("Thank you form booking with us.\nYou will got a confirmation message with all details.");
+    }
+  </script>
+
 
 </body>
 

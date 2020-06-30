@@ -1,0 +1,131 @@
+@import "./variables";
+
+$anglebackground: rgb(239, 239, 239) !important;
+$anglecolor: rgb(74, 74, 74);
+
+/* trending box of international and indian in tours.html */
+@mixin trendingboxesnavigationicon {
+     background-color: $anglebackground;
+     width: 33px;
+     height: 33px;
+     border-radius: 50px !important;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     outline: none;
+}
+
+/* page banner in tours.html */
+@mixin autoslidernavigationicon {
+     background-color: $anglebackground;
+     font-size: 25px;
+     color: $anglecolor;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     height: 33px;
+     width: 33px;
+     border: none;
+     border-radius: 50px !important;
+}
+
+/* car rental button design */
+@mixin rentalbuttons {
+     color: $fcolor;
+     border: none;
+     outline: none;
+     background: linear-gradient(to right, #ff4e50, #f9d423);
+     border-radius: 6px;
+     transition: all 1s ease-in-out .2s;
+
+     &:hover {
+          cursor: pointer;
+          font-weight: 700;
+          color: #4b431f;
+          border: 2px solid #665f3e;
+          background: linear-gradient(to left, #ff4e50, #f9d423);
+     }
+}
+
+/* car line */
+@mixin carline {
+          position: relative;
+          display: flex;
+          justify-content: center;
+
+          &::before {
+               content: "";
+               position: absolute;
+               background-color: $b3color;
+               top: 18px;
+               left: 44%;
+               height: 2px;
+               width: 50px;
+          }
+
+          & .fa-car {
+               padding-top: 10px;
+               /* import from top of rental.scss */
+               color: $colormain;
+               font-size: 20px;
+          }
+
+          &::after {
+               content: "";
+               position: absolute;
+               background-color: $b3color;
+               top: 18px;
+               right: 44%;
+               height: 2px;
+               width: 50px;
+          }
+}
+
+/* end of car line */
+
+/* car rental form date data */
+@mixin date {
+     position: relative;
+     background-color: white;
+     font-size: 14px;
+     width: 49%;
+     margin-top: 15px;
+     height: 40px;
+     color: #333;
+     padding: 10px 0 0 10px;
+     border-radius: 6px;
+}
+
+@mixin happy-clients {
+     position: absolute;
+     position: relative;
+     height: 130px;
+     width: 300px;
+     background-color: rgba(0, 0, 0, 0.6);
+
+     & .fal {
+          font-size: 52px;
+          /* import from top of rental.scss */
+          color: $colormain;
+          position: absolute;
+          top: 34%;
+          left: 10%;
+     }
+
+     & h4 {
+          position: absolute;
+          font-weight: 700;
+          top: 23%;
+          right: 28.5%;
+          font-size: 35px;
+          color: $fcolor;
+     }
+
+     & p {
+          position: absolute;
+          top: 60%;
+          right: 27%;
+          font-size: 15px;
+          color: $fcolor;
+     }
+}

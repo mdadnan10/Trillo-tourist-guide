@@ -1,0 +1,466 @@
+@import "./variables";
+@import "./mixin";
+
+$colormain: #ffd000;
+
+/* preloader for car rental site */
+#car-loader {
+     position: fixed;
+     width: 100%;
+     height: 120vh;
+     background: #fff url('../images/preloaderrental.gif') no-repeat center;
+     z-index: 9;
+}
+
+/* home display image and its form */
+.home-display {
+     height: 100vh;
+     width: 100%;
+     position: relative;
+     display: flex;
+     background-color: black;
+
+     & img {
+          height: 100%;
+          width: 100%;
+          opacity: .3;
+     }
+}
+
+.booking-form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: absolute;
+     top: 4.5%;
+     right: 5%;
+     color: $fcolor;
+     width: 450px;
+     height: 525px;
+     background-color: rgba(32, 46, 69, 0.4);
+     border: 1px solid #4b5263;
+     border-radius: 5px;
+
+     & h4 {
+          font-weight: 700;
+          font-size: 22px;
+          margin-top: 25px;
+     }
+
+     & form {
+          width: 82%;
+
+          & button {
+               /* import from mix in */
+               @include rentalbuttons;
+               margin-top: 20px;
+               font-size: 16px;
+               height: 40px;
+               width: 100%;
+          }
+     }
+
+     & .input {
+          margin-top: 15px;
+          font-size: 14px;
+          height: 40px;
+          width: 100%;
+          border-radius: 6px;
+     }
+}
+
+.date {
+     position: absolute;
+     width: 49%;
+     height: 40px;
+     top: 0;
+     right: 0;
+     border-radius: 6px;
+}
+
+.pick-up {
+     position: relative;
+     width: 100%;
+
+     & p {
+          /* import from mixin.scss */
+          @include date;
+     }
+}
+
+.return {
+     position: relative;
+     width: 100%;
+
+     & p {
+          /* import from mixin.scss */
+          @include date;
+     }
+}
+
+.home-text {
+     position: absolute;
+     top: 45%;
+     transform: translatey(-50%);
+     left: 6%;
+     color: $fcolor;
+
+     & p {
+          font-size: 16px;
+          font-weight: 500;
+     }
+
+     & h2 {
+          font-size: 40px;
+          font-family: 'Coda Caption', sans-serif;
+     }
+
+     & .slogan-text {
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 500;
+     }
+
+     & button {
+          /* import from mix in */
+          @include rentalbuttons;
+          margin-top: 20px;
+          font-size: 15px;
+          height: 45px;
+          width: 200px;
+     }
+}
+
+/* end of home and form section */
+
+/* about us with ad video */
+.about-us {
+     width: 90%;
+     margin: 4% auto;
+
+     & h4 {
+          text-align: center;
+          font-size: 34px;
+          font-weight: 700;
+     }
+
+     & .aboutus-text {
+          margin-top: 10%;
+          font-size: 17px;
+          width: 50%;
+
+          & button {
+               @include rentalbuttons;
+               font-size: 14px;
+               height: 35px;
+               width: 130px;
+               margin: 30px 20px 0 0;
+          }
+     }
+}
+
+/* this one for car icon and and line */
+.car-line {
+     @include carline;
+}
+
+/* end od car icon and line */
+
+.inner-about-us {
+     display: flex;
+     justify-content: space-between;
+
+     & video {
+          margin-top: 6%;
+          height: 320px;
+          width: 45%;
+          border-radius: 4px;
+     }
+}
+
+/* end of about us and ad video */
+
+/* our sevices for our clients */
+.our-services {
+     width: 90%;
+     margin: 8% auto;
+
+     & h4 {
+          text-align: center;
+          font-size: 32px;
+          font-weight: 700;
+     }
+
+     & .serivice-heading-para {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+          font-size: 16px;
+          padding-bottom: 6%;
+     }
+}
+
+.box-line {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 40px;
+
+     & .box {
+          height: 200px;
+          width: 31.5%;
+          border-radius: 6px;
+          background-color: #f3f3fb;
+          transition: all .3s ease-in-out 0.2s;
+
+          & h3 {
+               font-size: 18px;
+               font-weight: 700;
+               padding: 40px 0 20px 35px;
+
+               & .fal {
+                    padding-right: 15px;
+               }
+          }
+
+          & p {
+               font-size: 14px;
+               padding: 0 35px 0 35px;
+               color: #333 !important;
+          }
+
+          &:hover {
+               /* import from top of rental.scss */
+               color: #ffd000;
+               box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.5);
+               cursor: pointer;
+          }
+     }
+}
+
+/* end of our service for our clients */
+
+/* globally connected image and text */
+.globally-connected {
+     height: 70vh;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+
+     & .globally-image {
+          height: 100%;
+          width: 55%;
+
+          & img {
+               width: 100%;
+               height: 100%;
+               border-radius: 5px;
+          }
+     }
+
+     .globally-text {
+          width: 55%;
+          padding: 5%;
+
+          & h4 {
+               letter-spacing: 3px;
+               word-spacing: 5px;
+               font-size: 34px;
+               font-weight: 700;
+          }
+
+          & h5 {
+               padding-top: 16px;
+               font-size: 17px;
+          }
+
+          & p {
+               padding-top: 20px;
+               font-size: 16px;
+          }
+
+          & button {
+               @include rentalbuttons;
+               font-size: 16px;
+               margin-top: 20px;
+               height: 40px;
+               width: 150px;
+          }
+     }
+}
+
+/* end od globally connected and text */
+
+/* page banner in car rental */
+.car-page-banner {
+     height: 50vh;
+     width: 90%;
+     background-color: grey;
+     margin: 8% auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     & h2 {
+          color: white
+     }
+}
+
+/* end of page banner in car rental */
+
+/* happy clients offices cars in stock */
+.happy-serivices {
+     position: relative;
+     margin-top: 8%;
+     height: 45vh;
+     width: 100%;
+     background-color: black;
+     display: flex;
+     align-items: center;
+
+     & .clients-bgimg {
+          position: absolute;
+          background-image: url(../images/happyservices.jpg);
+          background-size: cover;
+          background-position: center center;
+          height: 100%;
+          width: 100%;
+          opacity: .3;
+     }
+
+     & .happy-clients {
+          /* import from mixin.scss */
+          @include happy-clients;
+          left: 8%;
+     }
+
+     & .cars-instock {
+          /* import from mixin.scss */
+          @include happy-clients;
+          left: 15%;
+     }
+
+     & .office-incities {
+          /* import from mixin.scss */
+          @include happy-clients;
+          left: 20%;
+
+          & p {
+               right: 20%;
+          }
+     }
+}
+
+/* page banner in car rental */
+.car-page-banner {
+     height: 50vh;
+     width: 90%;
+     background-color: grey;
+     margin: 8% auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     & h2 {
+          color: white
+     }
+}
+
+/* different car model for rent */
+.select-car-model {
+     height: 80vh;
+     width: 90%;
+     background-color: grey;
+     margin: 8% auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     & h2 {
+          color: white
+     }
+}
+
+/* end of different car model */
+
+/* monthly price for clients */
+.monthly-pack {
+     height: 80vh;
+     background-color: grey;
+     margin-top: 8%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     & h2 {
+          color: white
+     }
+}
+
+/* end of monthly price for clients */
+
+/* testimonials */
+.testimonials {
+     height: 60vh;
+     width: 90%;
+     background-color: grey;
+     margin: 8% auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     & h2 {
+          color: white
+     }
+}
+
+/* end of testimonials */
+
+/* support team */
+.support-team {
+     position: relative;
+     height: 50vh;
+     width: 100%;
+     background-color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     & .support-bgimg {
+          position: absolute;
+          background-image: url(../images/oursupportteam.jpg);
+          height: 100%;
+          width: 100%;
+          background-position: center center;
+          opacity: 0.2;
+     }
+
+     & .inner-support {
+          width: 70%;
+          height: 70%;
+
+          & h2 {
+               font-size: 32px;
+               font-weight: 700;
+               text-align: center;
+               color: $fcolor;
+          }
+
+          & p {
+               padding: 2% 0 2% 0;
+               text-align: center;
+               font-size: 14px;
+               color: $fcolor;
+          }
+
+          & button {
+               @include rentalbuttons;
+               position: absolute;
+               font-size: 13px;
+               left: 40%;
+               height: 40px;
+               width: 250px;
+          }
+     }
+}
+
+/* end of support team */

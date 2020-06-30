@@ -1,0 +1,165 @@
+@import "./variables";
+@import "./mixin";
+
+$footertext: #e7e7e7;
+
+.indexfooter {
+     text-align: center;
+     margin-top: 60px;
+     /* import from variables.scss */
+     background: $background;
+     height: 155px;
+     width: 100%;
+}
+
+.foootertext {
+     font-size: 16px;
+     /* import from variables.scss */
+     color: $textcolor;
+     padding: 30px 0 20px 0;
+}
+
+#booknowbtn {
+     background-image: -webkit-gradient(linear, left top, right top, from(#FF3366), to(#BA265D));
+     height: 55px;
+     width: 240px;
+     font-size: 16px;
+     padding-top: 14px;
+     border-radius: 60px;
+     text-decoration: none;
+}
+
+
+/*--------tours and reavels foooter------*/
+
+.toursfooter {
+     height: 201px;
+     position: relative;
+     width: 100%;
+     background-color: #515151;
+}
+
+.footerrow {
+     display: flex;
+     justify-content: space-around;
+}
+
+.helpline {
+     line-height: 27px;
+     /* import from variables.scss */
+     color: $footertext;
+     font-size: 17px;
+     margin-top: 20px;
+     padding-right: 50px;
+     border-right: 1px solid rgb(190, 190, 190);
+
+     & a {
+          /* import from variables.scss */
+          color: $footertext;
+          text-decoration: none;
+     }
+
+     & span {
+          /* import from variables.scss */
+          font-size: $size12;
+     }
+
+     .fa-phone-alt {
+          font-size: 20px;
+          /* import from variables.scss */
+          color: $buttonscolor;
+     }
+}
+
+.subscribe {
+     margin-top: 27px;
+     position: relative;
+     width: 320px;
+
+     & input {
+          height: 40px;
+          /* import from variables.scss */
+          font-size: $size13;
+          border-radius: 20px;
+     }
+
+     .fa-phone-alt {
+          font-size: 20px;
+          /* import from variables.scss */
+          color: $buttonscolor;
+     }
+}
+
+#subsbtn {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     right: 12px;
+     top: 8px;
+     height: 23px;
+     width: 90px;
+     /* import from variables.scss */
+     background: $buttonscolor;
+     color: $fcolor;
+     font-weight: bold;
+     border-radius: 20px;
+     outline: none;
+}
+
+.tourscopyright {
+     position: absolute;
+     /* import from variables.scss */
+     color: $footertext;
+     font-size: $size12;
+     left: 43%;
+     bottom: 0;
+}
+
+.followus {
+     padding-top: 30px;
+     text-align: center;
+
+     & a {
+          text-decoration: none;
+     }
+}
+
+#sicon {
+     margin: 12px 5px;
+     padding: 5px;
+     font-size: 16px;
+     width: 27px;
+     height: 27px;
+     text-align: center;
+     border-radius: 50%;
+}
+
+.fab:hover {
+     opacity: .7;
+}
+
+.fa-facebook-f {
+     background: #3B5998;
+     color: white;
+}
+
+.fa-youtube {
+     background: #c4302b;
+     color: white;
+}
+
+.fa-pinterest {
+     background: #E60023;
+     color: white;
+}
+
+.fa-instagram {
+     background: #3f729b;
+     color: white;
+}
+
+.fa-linkedin-in {
+     background: #0e76a8;
+     color: white;
+}
