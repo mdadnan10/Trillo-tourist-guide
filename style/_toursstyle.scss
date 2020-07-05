@@ -3,19 +3,6 @@
 
 $headingtext: 25px;
 
-/*---------slide show---------*/
-.carousel {
-	top: -5px;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-	height: 30px;
-	width: 30px;
-}
-
-/*---------end slide show---------*/
-
 /*------all trending box and text------*/
 #main {
 	transition: margin-left .5s;
@@ -35,7 +22,7 @@ $headingtext: 25px;
 
 	& .trendingtext {
 		/* import from variables.scss */
-		font-size: $size16;
+		font-size: $size15;
 		color: $textcolor;
 
 		& button {
@@ -67,13 +54,13 @@ $headingtext: 25px;
 		height: 291px;
 		margin-right: 5px;
 		background-color: black;
-		border-radius: 8px;
+		border-radius: 6px;
 		position: relative;
 
 		& img {
 			height: 100%;
 			position: absolute;
-			border-radius: 8px;
+			border-radius: 6px;
 			opacity: 0.5;
 		}
 
@@ -140,6 +127,7 @@ $headingtext: 25px;
 		& a {
 			& img {
 				width: 100%;
+				border-radius: 4px;
 			}
 		}
 
@@ -204,7 +192,6 @@ $headingtext: 25px;
 		& img {
 			height: 100%;
 			width: 100%;
-			border-radius: 8px;
 			border-top-left-radius: 8px;
 			border-top-right-radius: 8px;
 		}
@@ -240,7 +227,7 @@ $headingtext: 25px;
 		/* import from variables.scss */
 		color: $textcolor;
 		font-size: $headingtext;
-		font-weight: bold;
+		font-weight: 700;
 		padding-bottom: 20px;
 	}
 }
@@ -273,10 +260,10 @@ $headingtext: 25px;
 .whywe-heading-text {
 	/* import from variables.scss */
 	color: $textcolor;
-	padding: 8px 0 5px 0;
-	font-size: 18px;
+	padding: 10px 0 10px 0;
+	font-size: 17px;
 	text-align: center;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .whywe-text-1,
@@ -302,7 +289,7 @@ $headingtext: 25px;
 }
 
 .whywe-text-3 {
-	padding-bottom: 55px;
+	padding-bottom: 82px;
 	border-bottom: 4px solid #35bec4;
 }
 
@@ -323,11 +310,13 @@ $headingtext: 25px;
 	position: relative;
 	height: 300px;
 	display: flex;
+	border-radius: 4px;
 
 	& img {
 		width: 100%;
 		height: 100%;
 		opacity: .5;
+		border-radius: 4px;
 	}
 
 	& .planwithus {
@@ -337,7 +326,7 @@ $headingtext: 25px;
 		position: absolute;
 		font-size: 28px;
 		font-weight: bold;
-		padding: 8rem;
+		padding: 4.5rem;
 	}
 
 	& .start {
@@ -369,7 +358,6 @@ $headingtext: 25px;
 	}
 
 	& .checkbox {
-		margin-left: 23px;
 		/* import from variables.scss */
 		color: $fcolor;
 		font-size: $size12;
@@ -387,13 +375,18 @@ $headingtext: 25px;
 }
 
 #contactbtn {
-	height: 36px;
+	height: 34px;
 	width: 120px;
-	font-size: 16px;
+	padding-top: 4.5px;
+	margin-top: 13px;
 	/* import from variables.scss */
 	color: $fcolor;
-	background-color: $buttonscolor;
+	font-size: $size15;
+	font-weight: 600;
+	background: linear-gradient(to right, #f85032, #e73827);
 	border-radius: 20px;
-	font-weight: bold;
 	outline: none;
+	&:hover {
+		background: linear-gradient(to left, #f85032, #e73827);
+	}
 }

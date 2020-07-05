@@ -55,13 +55,13 @@ section {
           font-size: 23px;
           padding: 0 30px 0 30px;
      }
-}
 
-#staricon {
-     padding-top: 4px;
-     font-size: 19px;
-     color: $stariconcolor;
-     padding-left: 2px;
+     & .material-icons {
+          padding-top: 4px;
+          font-size: 19px;
+          color: $stariconcolor;
+          padding-left: 2px;
+     }
 }
 
 .location-right {
@@ -76,7 +76,7 @@ section {
           color: $stariconcolor;
 
           & a {
-               color: rgb(44, 37, 37);
+               color: $stariconcolor;
                text-decoration: none;
           }
      }
@@ -98,12 +98,13 @@ section {
      & .numberrate {
           text-align: center;
           color: white;
-          font-size: $size20;
+          font-size: $size16;
           padding-top: 7px;
      }
 
      & .allratting {
           text-align: center;
+          font-size: $size11;
           color: white;
      }
 }
@@ -113,6 +114,27 @@ section {
 .main {
      display: flex;
      justify-content: space-around;
+
+     & .row {
+          border-bottom: $centercontentborder;
+          padding-bottom: 4%;
+
+          & .float-left {
+               padding: 20px 80px 10px 20px;
+               font-size: $size13;
+          }
+
+          & .float-right {
+
+               font-size: $size13;
+               padding-top: 23px;
+          }
+
+          & .fa-angle-right {
+               padding-top: 10px;
+          }
+
+     }
 }
 
 .center-content {
@@ -135,27 +157,6 @@ section {
      }
 }
 
-
-.row {
-     border-bottom: $centercontentborder;
-     padding-bottom: 4%;
-
-     & .float-left {
-          padding: 20px 80px 10px 20px;
-          font-size: $size13;
-     }
-
-     & .float-right {
-
-          font-size: $size13;
-          padding-top: 23px;
-     }
-
-     & .fa-angle-right {
-          padding-top: 10px;
-     }
-
-}
 
 
 .row1 {
@@ -221,6 +222,7 @@ section {
 
 .reviewdate {
      font-size: $size11;
+     font-weight: 200;
      padding-left: 73px;
 }
 

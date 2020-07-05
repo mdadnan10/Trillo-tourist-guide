@@ -32,53 +32,52 @@ $anglecolor: rgb(74, 74, 74);
 /* car rental button design */
 @mixin rentalbuttons {
      color: $fcolor;
+     font-weight: 500;
      border: none;
      outline: none;
      background: linear-gradient(to right, #ff4e50, #f9d423);
      border-radius: 6px;
-     transition: all 1s ease-in-out .2s;
+     transition: all .6s ease-in-out .2s;
 
      &:hover {
           cursor: pointer;
-          font-weight: 700;
           color: #4b431f;
-          border: 2px solid #665f3e;
           background: linear-gradient(to left, #ff4e50, #f9d423);
      }
 }
 
 /* car line */
 @mixin carline {
-          position: relative;
-          display: flex;
-          justify-content: center;
+     position: relative;
+     display: flex;
+     justify-content: center;
 
-          &::before {
-               content: "";
-               position: absolute;
-               background-color: $b3color;
-               top: 18px;
-               left: 44%;
-               height: 2px;
-               width: 50px;
-          }
+     &::before {
+          content: "";
+          position: absolute;
+          background-color: $b3color;
+          top: 18px;
+          left: 44%;
+          height: 2px;
+          width: 50px;
+     }
 
-          & .fa-car {
-               padding-top: 10px;
-               /* import from top of rental.scss */
-               color: $colormain;
-               font-size: 20px;
-          }
+     & .fa-car {
+          padding-top: 10px;
+          /* import from top of rental.scss */
+          color: $colormain;
+          font-size: 20px;
+     }
 
-          &::after {
-               content: "";
-               position: absolute;
-               background-color: $b3color;
-               top: 18px;
-               right: 44%;
-               height: 2px;
-               width: 50px;
-          }
+     &::after {
+          content: "";
+          position: absolute;
+          background-color: $b3color;
+          top: 18px;
+          right: 44%;
+          height: 2px;
+          width: 50px;
+     }
 }
 
 /* end of car line */
@@ -91,17 +90,59 @@ $anglecolor: rgb(74, 74, 74);
      width: 49%;
      margin-top: 15px;
      height: 40px;
-     color: #333;
-     padding: 10px 0 0 10px;
+     color: #495057;
+     padding: 10px 0 0 14px;
      border-radius: 6px;
 }
 
+/* end car form rental date dat */
+
+/* box and hover effect of services and reviewer section */
+@mixin box-content {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 40px;
+
+     & .box {
+          height: 200px;
+          width: 31.5%;
+          border-radius: 6px;
+          background-color: #f3f3fb;
+          transition: all .3s ease-in-out 0.2s;
+
+          & h3 {
+               font-size: 18px;
+               font-weight: 700;
+
+               & .fal {
+                    padding-right: 15px;
+               }
+          }
+
+          & p {
+               font-size: 14px;
+               color: #333 !important;
+          }
+
+          &:hover {
+               /* import from top of rental.scss */
+               box-shadow: -14px -14px 12px rgba(157, 157, 157, 0.5),
+                    14px 14px 12px rgba(157, 157, 157, 0.5);
+               cursor: pointer;
+          }
+     }
+}
+
+/* end od box and hover effect of services and reviewer section */
+
+/* happy client section */
 @mixin happy-clients {
      position: absolute;
      position: relative;
      height: 130px;
      width: 300px;
      background-color: rgba(0, 0, 0, 0.6);
+     border-radius: 4px;
 
      & .fal {
           font-size: 52px;
@@ -129,3 +170,69 @@ $anglecolor: rgb(74, 74, 74);
           color: $fcolor;
      }
 }
+
+/* end happy client section */
+
+/* different car model box design */
+@mixin carmodels {
+     display: flex;
+     margin-bottom: 30px;
+
+     & .car-model-box {
+          height: 350px;
+          width: 360px;
+          box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
+
+          & img {
+               width: 100%;
+               border-top-left-radius: 4px;
+               border-top-right-radius: 4px;
+          }
+
+          & .carname-price {
+               display: flex;
+               justify-content: space-between;
+               margin: 10px;
+
+               & a {
+                    text-decoration: none;
+                    color: $b3color;
+                    font-weight: 700;
+                    font-size: 18px;
+               }
+
+               & h6 {
+                    color: yellowgreen;
+                    font-size: 14px;
+               }
+          }
+
+          & p {
+               color: $b3color;
+               font-size: 15px;
+               margin-left: 10px;
+               font-weight: 400;
+
+          }
+
+          & .model-links {
+               margin: 10px;
+
+               & a {
+                    text-decoration: none;
+                    color: $b3color;
+                    border: .1px solid rgba(122, 98, 98, 0.712);
+                    border-radius: 3px;
+                    padding: 2px 10px 2px 10px;
+                    margin-right: 5px;
+
+                    &:hover {
+                         background-color: yellowgreen;
+                    }
+               }
+          }
+     }
+}
+/* end of different car model box design */

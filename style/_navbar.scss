@@ -4,9 +4,6 @@
 nav {
      height: 71px;
      width: 100%;
-
-     /* import from variables.scss */
-     box-shadow: $boxshadow;
      margin-top: -8px;
 
      & ul {
@@ -33,7 +30,7 @@ nav {
                     font-family: 'Arimo', sans-serif;
 
                     &:hover {
-                         color: rgb(78, 70, 57);
+                         color: rgb(76, 124, 80);
                     }
                }
           }
@@ -45,14 +42,14 @@ nav {
      justify-content: center;
      align-items: center;
      font-size: 10px;
-     height: 1.75rem;
-     width: 1.75rem;
+     height: 19px;
+     width: 19px;
      border-radius: 50px;
      background-color: rgb(100, 62, 68);
      color: $fcolor;
      position: absolute;
-     top: 2rem;
-     right: .6rem;
+     top: 19px;
+     right: 4px;
 
 }
 
@@ -73,14 +70,14 @@ nav {
 
 .logo {
      float: left;
-     height: 3.25rem;
-     margin: 20px 0 0 15px;
+     height: 37px;
+     margin: 20px 0 0 12px;
 }
 
 .search {
      top: 16px;
-     left: 25%;
-     position: absolute;
+    position: absolute;
+    left: 27%;
 
      & .searchbox {
           position: absolute;

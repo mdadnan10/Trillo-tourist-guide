@@ -6,18 +6,29 @@
 /* car line */
 /* end of car line */
 /* car rental form date data */
+/* end car form rental date dat */
+/* box and hover effect of services and reviewer section */
+/* end od box and hover effect of services and reviewer section */
+/* happy client section */
+/* end happy client section */
+/* different car model box design */
+/* end of different car model box design */
 /* trending box of international and indian in tours.html */
 /* page banner in tours.html */
 /* car rental button design */
 /* car line */
 /* end of car line */
 /* car rental form date data */
+/* end car form rental date dat */
+/* box and hover effect of services and reviewer section */
+/* end od box and hover effect of services and reviewer section */
+/* happy client section */
+/* end happy client section */
+/* different car model box design */
+/* end of different car model box design */
 nav {
   height: 71px;
   width: 100%;
-  /* import from variables.scss */
-  -webkit-box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
   margin-top: -8px;
 }
 
@@ -47,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #4e4639;
+  color: #4c7c50;
 }
 
 .notification {
@@ -61,14 +72,14 @@ nav ul li a:hover {
       -ms-flex-align: center;
           align-items: center;
   font-size: 10px;
-  height: 1.75rem;
-  width: 1.75rem;
+  height: 19px;
+  width: 19px;
   border-radius: 50px;
   background-color: #643e44;
   color: #ffffff;
   position: absolute;
-  top: 2rem;
-  right: .6rem;
+  top: 19px;
+  right: 4px;
 }
 
 #profile {
@@ -87,14 +98,14 @@ nav ul li a:hover {
 
 .logo {
   float: left;
-  height: 3.25rem;
-  margin: 20px 0 0 15px;
+  height: 37px;
+  margin: 20px 0 0 12px;
 }
 
 .search {
   top: 16px;
-  left: 25%;
   position: absolute;
+  left: 27%;
 }
 
 .search .searchbox {
@@ -132,6 +143,13 @@ nav ul li a:hover {
 /* car line */
 /* end of car line */
 /* car rental form date data */
+/* end car form rental date dat */
+/* box and hover effect of services and reviewer section */
+/* end od box and hover effect of services and reviewer section */
+/* happy client section */
+/* end happy client section */
+/* different car model box design */
+/* end of different car model box design */
 .sideclose a {
   padding: 13px 0 13px 0;
   font-size: 14px;
@@ -202,6 +220,13 @@ nav ul li a:hover {
 /* car line */
 /* end of car line */
 /* car rental form date data */
+/* end car form rental date dat */
+/* box and hover effect of services and reviewer section */
+/* end od box and hover effect of services and reviewer section */
+/* happy client section */
+/* end happy client section */
+/* different car model box design */
+/* end of different car model box design */
 .indexfooter {
   text-align: center;
   margin-top: 60px;
@@ -226,6 +251,14 @@ nav ul li a:hover {
   padding-top: 14px;
   border-radius: 60px;
   text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out 0.2s;
+  transition: all 0.2s ease-in-out 0.2s;
+}
+
+#booknowbtn:hover {
+  color: antiquewhite;
+  font-size: 18px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#FF3366), to(#BA265D));
 }
 
 /*--------tours and reavels foooter------*/
@@ -306,11 +339,19 @@ nav ul li a:hover {
   height: 23px;
   width: 90px;
   /* import from variables.scss */
-  background: #ff0000;
+  background: -webkit-gradient(linear, left top, right top, from(#f85032), to(#e73827));
+  background: linear-gradient(to right, #f85032, #e73827);
   color: #ffffff;
-  font-weight: bold;
+  /* import from variables.scss */
+  font-size: 13px;
+  font-weight: 500;
   border-radius: 20px;
   outline: none;
+}
+
+#subsbtn:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#f85032), to(#e73827));
+  background: linear-gradient(to left, #f85032, #e73827);
 }
 
 .tourscopyright {
@@ -331,63 +372,234 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-#sicon {
-  margin: 12px 5px;
-  padding: 5px;
-  font-size: 16px;
-  width: 27px;
-  height: 27px;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.fab:hover {
+.followus .fab:hover {
   opacity: .7;
 }
 
-.fa-facebook-f {
+.followus .fa-facebook-f {
   background: #3B5998;
   color: white;
 }
 
-.fa-youtube {
+.followus .fa-youtube {
   background: #c4302b;
   color: white;
 }
 
-.fa-pinterest {
+.followus .fa-pinterest {
   background: #E60023;
   color: white;
 }
 
-.fa-instagram {
+.followus .fa-instagram {
   background: #3f729b;
   color: white;
 }
 
-.fa-linkedin-in {
+.followus .fa-linkedin-in {
   background: #0e76a8;
   color: white;
 }
 
+.followus .fa-twitter {
+  background: #00acee;
+  color: white;
+}
+
+.sicon {
+  padding: 7px 5px 0px 5px;
+  /* import from variables.scss */
+  font-size: 15px;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* end of tours footer section */
+/* footer section of car rental page */
+.rental-footer {
+  position: relative;
+  height: 50vh;
+  background-color: #1e2228;
+  margin-top: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rental-footer .getin-touch {
+  height: 260px;
+  width: 30%;
+}
+
+.rental-footer .getin-touch h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.rental-footer .getin-touch p {
+  /* import from variables.scss */
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.rental-footer .getin-touch span {
+  /* import from variables.scss */
+  font-size: 14px;
+  line-height: 2.2;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.rental-footer .getin-touch a {
+  /* import from variables.scss */
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 2.2;
+  font-weight: 500;
+}
+
+.rental-footer .getin-touch button {
+  /* import from mixin.scss */
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, left top, right top, from(#ff4e50), to(#f9d423));
+  background: linear-gradient(to right, #ff4e50, #f9d423);
+  border-radius: 6px;
+  -webkit-transition: all .6s ease-in-out .2s;
+  transition: all .6s ease-in-out .2s;
+  margin-top: 15px;
+  /* import from variables.scss */
+  font-size: 14px;
+  height: 35px;
+  width: 150px;
+  border-radius: 2px;
+}
+
+.rental-footer .getin-touch button:hover {
+  cursor: pointer;
+  color: #4b431f;
+  background: -webkit-gradient(linear, right top, left top, from(#ff4e50), to(#f9d423));
+  background: linear-gradient(to left, #ff4e50, #f9d423);
+}
+
+.rental-footer .rental-copyright {
+  width: 100%;
+  /* import from variables.scss */
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+}
+
+.rental-footer .rental-follow-us {
+  width: 23%;
+}
+
+.rental-footer .rental-follow-us a {
+  text-decoration: none;
+}
+
+.rental-footer .rental-follow-us .fab {
+  color: #ffffff;
+  /* import from variables.scss */
+  font-size: 15px;
+  padding-right: 20px;
+}
+
+.rental-footer .rental-follow-us .fab:hover {
+  color: #ffd000;
+}
+
+.rental-footer .news-letter {
+  position: relative;
+  height: 260px;
+  width: 290px;
+}
+
+.rental-footer .news-letter h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.rental-footer .news-letter p {
+  padding: 10px 0 12px 0;
+  /* import from variables.scss */
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.rental-footer .news-letter input {
+  border-radius: 3px;
+  /* import from variables.scss */
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 260px;
+}
+
+.rental-footer .news-letter button {
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, left top, right top, from(#ff4e50), to(#f9d423));
+  background: linear-gradient(to right, #ff4e50, #f9d423);
+  border-radius: 6px;
+  -webkit-transition: all .6s ease-in-out .2s;
+  transition: all .6s ease-in-out .2s;
+  position: absolute;
+  /* import from variables.scss */
+  font-size: 14px;
+  right: 30px;
+  height: 35px;
+  width: 40px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 0px;
+}
+
+.rental-footer .news-letter button:hover {
+  cursor: pointer;
+  color: #4b431f;
+  background: -webkit-gradient(linear, right top, left top, from(#ff4e50), to(#f9d423));
+  background: linear-gradient(to left, #ff4e50, #f9d423);
+}
+
+/* end of footer section of car rental page */
 /* trending box of international and indian in tours.html */
 /* page banner in tours.html */
 /* car rental button design */
 /* car line */
 /* end of car line */
 /* car rental form date data */
-/*---------slide show---------*/
-.carousel {
-  top: -5px;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  height: 30px;
-  width: 30px;
-}
-
-/*---------end slide show---------*/
+/* end car form rental date dat */
+/* box and hover effect of services and reviewer section */
+/* end od box and hover effect of services and reviewer section */
+/* happy client section */
+/* end happy client section */
+/* different car model box design */
+/* end of different car model box design */
 /*------all trending box and text------*/
 #main {
   -webkit-transition: margin-left .5s;
@@ -409,7 +621,7 @@ nav ul li a:hover {
 
 .trendingbox .trendingtext {
   /* import from variables.scss */
-  font-size: 16px;
+  font-size: 15px;
   color: #333;
 }
 
@@ -441,14 +653,14 @@ nav ul li a:hover {
   height: 291px;
   margin-right: 5px;
   background-color: black;
-  border-radius: 8px;
+  border-radius: 6px;
   position: relative;
 }
 
 .main-slider .slider-img-main img {
   height: 100%;
   position: absolute;
-  border-radius: 8px;
+  border-radius: 6px;
   opacity: 0.5;
 }
 
@@ -530,6 +742,7 @@ nav ul li a:hover {
 
 .page-banner .page-banner-slide a img {
   width: 100%;
+  border-radius: 4px;
 }
 
 .page-banner .page-banner-slide .display-left {
@@ -616,7 +829,6 @@ nav ul li a:hover {
 .inlinereading .readingpost img {
   height: 100%;
   width: 100%;
-  border-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -651,7 +863,7 @@ nav ul li a:hover {
   /* import from variables.scss */
   color: #333;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 700;
   padding-bottom: 20px;
 }
 
@@ -687,10 +899,10 @@ nav ul li a:hover {
 .whywe-heading-text {
   /* import from variables.scss */
   color: #333;
-  padding: 8px 0 5px 0;
-  font-size: 18px;
+  padding: 10px 0 10px 0;
+  font-size: 17px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .whywe-text-1,
@@ -716,7 +928,7 @@ nav ul li a:hover {
 }
 
 .whywe-text-3 {
-  padding-bottom: 55px;
+  padding-bottom: 82px;
   border-bottom: 4px solid #35bec4;
 }
 
@@ -739,12 +951,14 @@ nav ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 4px;
 }
 
 .contactform img {
   width: 100%;
   height: 100%;
   opacity: .5;
+  border-radius: 4px;
 }
 
 .contactform .planwithus {
@@ -754,7 +968,7 @@ nav ul li a:hover {
   position: absolute;
   font-size: 28px;
   font-weight: bold;
-  padding: 8rem;
+  padding: 4.5rem;
 }
 
 .contactform .start {
@@ -785,7 +999,6 @@ nav ul li a:hover {
 }
 
 .submitform .checkbox {
-  margin-left: 23px;
   /* import from variables.scss */
   color: #ffffff;
   font-size: 12px;
@@ -802,15 +1015,23 @@ nav ul li a:hover {
 }
 
 #contactbtn {
-  height: 36px;
+  height: 34px;
   width: 120px;
-  font-size: 16px;
+  padding-top: 4.5px;
+  margin-top: 13px;
   /* import from variables.scss */
   color: #ffffff;
-  background-color: #ff0000;
+  font-size: 15px;
+  font-weight: 600;
+  background: -webkit-gradient(linear, left top, right top, from(#f85032), to(#e73827));
+  background: linear-gradient(to right, #f85032, #e73827);
   border-radius: 20px;
-  font-weight: bold;
   outline: none;
+}
+
+#contactbtn:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#f85032), to(#e73827));
+  background: linear-gradient(to left, #f85032, #e73827);
 }
 
 /* trending box of international and indian in tours.html */
@@ -819,6 +1040,13 @@ nav ul li a:hover {
 /* car line */
 /* end of car line */
 /* car rental form date data */
+/* end car form rental date dat */
+/* box and hover effect of services and reviewer section */
+/* end od box and hover effect of services and reviewer section */
+/* happy client section */
+/* end happy client section */
+/* different car model box design */
+/* end of different car model box design */
 /* preloader for car rental site */
 #car-loader {
   position: fixed;
@@ -880,13 +1108,14 @@ nav ul li a:hover {
 .booking-form form button {
   /* import from mix in */
   color: #ffffff;
+  font-weight: 500;
   border: none;
   outline: none;
   background: -webkit-gradient(linear, left top, right top, from(#ff4e50), to(#f9d423));
   background: linear-gradient(to right, #ff4e50, #f9d423);
   border-radius: 6px;
-  -webkit-transition: all 1s ease-in-out .2s;
-  transition: all 1s ease-in-out .2s;
+  -webkit-transition: all .6s ease-in-out .2s;
+  transition: all .6s ease-in-out .2s;
   margin-top: 20px;
   font-size: 16px;
   height: 40px;
@@ -895,9 +1124,7 @@ nav ul li a:hover {
 
 .booking-form form button:hover {
   cursor: pointer;
-  font-weight: 700;
   color: #4b431f;
-  border: 2px solid #665f3e;
   background: -webkit-gradient(linear, right top, left top, from(#ff4e50), to(#f9d423));
   background: linear-gradient(to left, #ff4e50, #f9d423);
 }
@@ -932,8 +1159,8 @@ nav ul li a:hover {
   width: 49%;
   margin-top: 15px;
   height: 40px;
-  color: #333;
-  padding: 10px 0 0 10px;
+  color: #495057;
+  padding: 10px 0 0 14px;
   border-radius: 6px;
 }
 
@@ -950,8 +1177,8 @@ nav ul li a:hover {
   width: 49%;
   margin-top: 15px;
   height: 40px;
-  color: #333;
-  padding: 10px 0 0 10px;
+  color: #495057;
+  padding: 10px 0 0 14px;
   border-radius: 6px;
 }
 
@@ -983,13 +1210,14 @@ nav ul li a:hover {
 .home-text button {
   /* import from mix in */
   color: #ffffff;
+  font-weight: 500;
   border: none;
   outline: none;
   background: -webkit-gradient(linear, left top, right top, from(#ff4e50), to(#f9d423));
   background: linear-gradient(to right, #ff4e50, #f9d423);
   border-radius: 6px;
-  -webkit-transition: all 1s ease-in-out .2s;
-  transition: all 1s ease-in-out .2s;
+  -webkit-transition: all .6s ease-in-out .2s;
+  transition: all .6s ease-in-out .2s;
   margin-top: 20px;
   font-size: 15px;
   height: 45px;
@@ -998,9 +1226,7 @@ nav ul li a:hover {
 
 .home-text button:hover {
   cursor: pointer;
-  font-weight: 700;
   color: #4b431f;
-  border: 2px solid #665f3e;
   background: -webkit-gradient(linear, right top, left top, from(#ff4e50), to(#f9d423));
   background: linear-gradient(to left, #ff4e50, #f9d423);
 }
@@ -1026,13 +1252,14 @@ nav ul li a:hover {
 
 .about-us .aboutus-text button {
   color: #ffffff;
+  font-weight: 500;
   border: none;
   outline: none;
   background: -webkit-gradient(linear, left top, right top, from(#ff4e50), to(#f9d423));
   background: linear-gradient(to right, #ff4e50, #f9d423);
   border-radius: 6px;
-  -webkit-transition: all 1s ease-in-out .2s;
-  transition: all 1s ease-in-out .2s;
+  -webkit-transition: all .6s ease-in-out .2s;
+  transition: all .6s ease-in-out .2s;
   font-size: 14px;
   height: 35px;
   width: 130px;
@@ -1041,9 +1268,7 @@ nav ul li a:hover {
 
 .about-us .aboutus-text button:hover {
   cursor: pointer;
-  font-weight: 700;
   color: #4b431f;
-  border: 2px solid #665f3e;
   background: -webkit-gradient(linear, right top, left top, from(#ff4e50), to(#f9d423));
   background: linear-gradient(to left, #ff4e50, #f9d423);
 }
@@ -1128,7 +1353,8 @@ nav ul li a:hover {
   padding-bottom: 6%;
 }
 
-.box-line {
+.our-services .box-line {
+  /* import from mixin.scss */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1138,7 +1364,7 @@ nav ul li a:hover {
   margin-bottom: 40px;
 }
 
-.box-line .box {
+.our-services .box-line .box {
   height: 200px;
   width: 31.5%;
   border-radius: 6px;
@@ -1147,28 +1373,33 @@ nav ul li a:hover {
   transition: all .3s ease-in-out 0.2s;
 }
 
-.box-line .box h3 {
+.our-services .box-line .box h3 {
   font-size: 18px;
   font-weight: 700;
-  padding: 40px 0 20px 35px;
 }
 
-.box-line .box h3 .fal {
+.our-services .box-line .box h3 .fal {
   padding-right: 15px;
 }
 
-.box-line .box p {
+.our-services .box-line .box p {
   font-size: 14px;
-  padding: 0 35px 0 35px;
   color: #333 !important;
 }
 
-.box-line .box:hover {
+.our-services .box-line .box:hover {
   /* import from top of rental.scss */
-  color: #ffd000;
-  -webkit-box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.5);
-          box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.5);
+  -webkit-box-shadow: -14px -14px 12px rgba(157, 157, 157, 0.5), 14px 14px 12px rgba(157, 157, 157, 0.5);
+          box-shadow: -14px -14px 12px rgba(157, 157, 157, 0.5), 14px 14px 12px rgba(157, 157, 157, 0.5);
   cursor: pointer;
+}
+
+.our-services .box-line h3 {
+  padding: 40px 0 20px 35px;
+}
+
+.our-services .box-line p {
+  padding: 0 35px 0 35px;
 }
 
 /* end of our service for our clients */
@@ -1192,7 +1423,8 @@ nav ul li a:hover {
 .globally-connected .globally-image img {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .globally-connected .globally-text {
@@ -1201,15 +1433,13 @@ nav ul li a:hover {
 }
 
 .globally-connected .globally-text h4 {
-  letter-spacing: 3px;
-  word-spacing: 5px;
-  font-size: 34px;
+  font-size: 38px;
   font-weight: 700;
 }
 
 .globally-connected .globally-text h5 {
   padding-top: 16px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .globally-connected .globally-text p {
@@ -1219,13 +1449,14 @@ nav ul li a:hover {
 
 .globally-connected .globally-text button {
   color: #ffffff;
+  font-weight: 500;
   border: none;
   outline: none;
   background: -webkit-gradient(linear, left top, right top, from(#ff4e50), to(#f9d423));
   background: linear-gradient(to right, #ff4e50, #f9d423);
   border-radius: 6px;
-  -webkit-transition: all 1s ease-in-out .2s;
-  transition: all 1s ease-in-out .2s;
+  -webkit-transition: all .6s ease-in-out .2s;
+  transition: all .6s ease-in-out .2s;
   font-size: 16px;
   margin-top: 20px;
   height: 40px;
@@ -1234,9 +1465,7 @@ nav ul li a:hover {
 
 .globally-connected .globally-text button:hover {
   cursor: pointer;
-  font-weight: 700;
   color: #4b431f;
-  border: 2px solid #665f3e;
   background: -webkit-gradient(linear, right top, left top, from(#ff4e50), to(#f9d423));
   background: linear-gradient(to left, #ff4e50, #f9d423);
 }
@@ -1244,23 +1473,101 @@ nav ul li a:hover {
 /* end od globally connected and text */
 /* page banner in car rental */
 .car-page-banner {
-  height: 50vh;
+  height: 75vh;
   width: 90%;
-  background-color: grey;
   margin: 8% auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .car-page-banner h2 {
-  color: white;
+  text-align: center;
+}
+
+.car-page-banner .carousel {
+  margin-top: 6%;
+}
+
+.car-page-banner .carousel .carousel-inner .carousel-item img {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  right: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.car-page-banner .carousel .carousel-inner .carousel-item .descrip {
+  width: 50%;
+  margin-top: -3px;
+}
+
+.car-page-banner .carousel .carousel-inner .carousel-item .descrip .slider-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.car-page-banner .carousel .carousel-inner .carousel-item .descrip .slider-price h5 {
+  color: orange;
+}
+
+.car-page-banner .carousel .carousel-inner .carousel-item .descrip .slider-price .day-size {
+  font-size: 13px;
+}
+
+.car-page-banner .carousel .carousel-inner .carousel-item .descrip .car-desc {
+  font-size: 14px;
+  line-height: 0.1;
+}
+
+.car-page-banner .carousel .carousel-inner .carousel-item .descrip h6 {
+  font-weight: 400;
+  padding: 7px 0 3px 0;
+  font-size: 14px;
+}
+
+.car-page-banner .carousel .carousel-inner .carousel-item .descrip p {
+  line-height: .5;
+  font-size: 14px;
+}
+
+.car-page-banner .carousel .carousel-inner .carousel-item .descrip button {
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, left top, right top, from(#ff4e50), to(#f9d423));
+  background: linear-gradient(to right, #ff4e50, #f9d423);
+  border-radius: 6px;
+  -webkit-transition: all .6s ease-in-out .2s;
+  transition: all .6s ease-in-out .2s;
+  height: 37px;
+  width: 200px;
+}
+
+.car-page-banner .carousel .carousel-inner .carousel-item .descrip button:hover {
+  cursor: pointer;
+  color: #4b431f;
+  background: -webkit-gradient(linear, right top, left top, from(#ff4e50), to(#f9d423));
+  background: linear-gradient(to left, #ff4e50, #f9d423);
+}
+
+.car-page-banner .carousel .carousel-indicators {
+  bottom: -70px;
+}
+
+.car-page-banner .carousel .carousel-indicators li {
+  background-color: grey;
+  height: 11px;
+  width: 11px;
+  border: 1px solid orangered;
+  border-radius: 2px;
+}
+
+.car-page-banner .carousel .carousel-indicators .active {
+  background-color: #ffd000;
 }
 
 /* end of page banner in car rental */
@@ -1277,6 +1584,9 @@ nav ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .happy-serivices .clients-bgimg {
@@ -1296,7 +1606,7 @@ nav ul li a:hover {
   height: 130px;
   width: 300px;
   background-color: rgba(0, 0, 0, 0.6);
-  left: 8%;
+  border-radius: 4px;
 }
 
 .happy-serivices .happy-clients .fal {
@@ -1332,7 +1642,7 @@ nav ul li a:hover {
   height: 130px;
   width: 300px;
   background-color: rgba(0, 0, 0, 0.6);
-  left: 15%;
+  border-radius: 4px;
 }
 
 .happy-serivices .cars-instock .fal {
@@ -1368,7 +1678,7 @@ nav ul li a:hover {
   height: 130px;
   width: 300px;
   background-color: rgba(0, 0, 0, 0.6);
-  left: 20%;
+  border-radius: 4px;
 }
 
 .happy-serivices .office-incities .fal {
@@ -1401,89 +1711,544 @@ nav ul li a:hover {
   right: 20%;
 }
 
-/* page banner in car rental */
-.car-page-banner {
-  height: 50vh;
-  width: 90%;
-  background-color: grey;
-  margin: 8% auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.car-page-banner h2 {
-  color: white;
-}
-
+/* end of happy clients offices cars in stock */
 /* different car model for rent */
 .select-car-model {
-  height: 80vh;
+  height: auto;
   width: 90%;
-  background-color: grey;
   margin: 8% auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .select-car-model h2 {
-  color: white;
+  text-align: center;
+}
+
+.select-car-model .container {
+  margin-top: 6%;
+}
+
+.select-car-model .container nav .nav-tabs {
+  border: none;
+  color: #fff;
+  background: #272e38;
+  border-radius: 0;
+}
+
+.select-car-model .container .audi-box {
+  /* import from mixin.scss */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.select-car-model .container .audi-box .car-model-box {
+  height: 350px;
+  width: 360px;
+  -webkit-box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
+          box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.select-car-model .container .audi-box .car-model-box img {
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.select-car-model .container .audi-box .car-model-box .carname-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+}
+
+.select-car-model .container .audi-box .car-model-box .carname-price a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.select-car-model .container .audi-box .car-model-box .carname-price h6 {
+  color: yellowgreen;
+  font-size: 14px;
+}
+
+.select-car-model .container .audi-box .car-model-box p {
+  color: #333;
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.select-car-model .container .audi-box .car-model-box .model-links {
+  margin: 10px;
+}
+
+.select-car-model .container .audi-box .car-model-box .model-links a {
+  text-decoration: none;
+  color: #333;
+  border: 0.1px solid rgba(122, 98, 98, 0.712);
+  border-radius: 3px;
+  padding: 2px 10px 2px 10px;
+  margin-right: 5px;
+}
+
+.select-car-model .container .audi-box .car-model-box .model-links a:hover {
+  background-color: yellowgreen;
+}
+
+.select-car-model .container .bmw-box {
+  /* import from mixin.scss */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.select-car-model .container .bmw-box .car-model-box {
+  height: 350px;
+  width: 360px;
+  -webkit-box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
+          box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.select-car-model .container .bmw-box .car-model-box img {
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.select-car-model .container .bmw-box .car-model-box .carname-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+}
+
+.select-car-model .container .bmw-box .car-model-box .carname-price a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.select-car-model .container .bmw-box .car-model-box .carname-price h6 {
+  color: yellowgreen;
+  font-size: 14px;
+}
+
+.select-car-model .container .bmw-box .car-model-box p {
+  color: #333;
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.select-car-model .container .bmw-box .car-model-box .model-links {
+  margin: 10px;
+}
+
+.select-car-model .container .bmw-box .car-model-box .model-links a {
+  text-decoration: none;
+  color: #333;
+  border: 0.1px solid rgba(122, 98, 98, 0.712);
+  border-radius: 3px;
+  padding: 2px 10px 2px 10px;
+  margin-right: 5px;
+}
+
+.select-car-model .container .bmw-box .car-model-box .model-links a:hover {
+  background-color: yellowgreen;
+}
+
+.select-car-model .container .ferrari-box {
+  /* import from mixin.scss */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.select-car-model .container .ferrari-box .car-model-box {
+  height: 350px;
+  width: 360px;
+  -webkit-box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
+          box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.select-car-model .container .ferrari-box .car-model-box img {
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.select-car-model .container .ferrari-box .car-model-box .carname-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+}
+
+.select-car-model .container .ferrari-box .car-model-box .carname-price a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.select-car-model .container .ferrari-box .car-model-box .carname-price h6 {
+  color: yellowgreen;
+  font-size: 14px;
+}
+
+.select-car-model .container .ferrari-box .car-model-box p {
+  color: #333;
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.select-car-model .container .ferrari-box .car-model-box .model-links {
+  margin: 10px;
+}
+
+.select-car-model .container .ferrari-box .car-model-box .model-links a {
+  text-decoration: none;
+  color: #333;
+  border: 0.1px solid rgba(122, 98, 98, 0.712);
+  border-radius: 3px;
+  padding: 2px 10px 2px 10px;
+  margin-right: 5px;
+}
+
+.select-car-model .container .ferrari-box .car-model-box .model-links a:hover {
+  background-color: yellowgreen;
+}
+
+.select-car-model .container .toyota-box {
+  /* import from mixin.scss */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.select-car-model .container .toyota-box .car-model-box {
+  height: 350px;
+  width: 360px;
+  -webkit-box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
+          box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.select-car-model .container .toyota-box .car-model-box img {
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.select-car-model .container .toyota-box .car-model-box .carname-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+}
+
+.select-car-model .container .toyota-box .car-model-box .carname-price a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.select-car-model .container .toyota-box .car-model-box .carname-price h6 {
+  color: yellowgreen;
+  font-size: 14px;
+}
+
+.select-car-model .container .toyota-box .car-model-box p {
+  color: #333;
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.select-car-model .container .toyota-box .car-model-box .model-links {
+  margin: 10px;
+}
+
+.select-car-model .container .toyota-box .car-model-box .model-links a {
+  text-decoration: none;
+  color: #333;
+  border: 0.1px solid rgba(122, 98, 98, 0.712);
+  border-radius: 3px;
+  padding: 2px 10px 2px 10px;
+  margin-right: 5px;
+}
+
+.select-car-model .container .toyota-box .car-model-box .model-links a:hover {
+  background-color: yellowgreen;
+}
+
+.select-car-model .container a.nav-item.nav-link {
+  border: .2px solid gray;
+  padding: 12px 0 12px 0;
+  color: #333;
+  font-size: 18px;
+  background: #ffffff;
+  border-radius: 0;
+}
+
+.select-car-model .container a.nav-item.nav-link.active {
+  color: #333;
+  font-size: 18px;
+  background: #ffd000;
+  border-radius: 0;
+}
+
+.select-car-model .container a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  top: 52.5px;
+  right: 14%;
+  border: 15px solid transparent;
+  border-top-color: #ffd000;
+}
+
+.select-car-model .container .tab-content {
+  background: #fdfdfd;
+  line-height: 25px;
+  margin-top: 4%;
+}
+
+.select-car-model .container a.nav-item.nav-link:hover,
+.select-car-model .container a.nav-item.nav-link:focus {
+  border: none;
+  background: #ffd000;
+  color: #fff;
+  border-radius: 0;
+  -webkit-transition: background 0.20s linear;
+  transition: background 0.20s linear;
 }
 
 /* end of different car model */
 /* monthly price for clients */
 .monthly-pack {
-  height: 80vh;
-  background-color: grey;
+  background-color: black;
   margin-top: 8%;
+  position: relative;
+  z-index: -2;
+}
+
+.monthly-pack .monthly-pack-bgimg {
+  background-image: url(../images/ourmembership.jpg);
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+}
+
+.monthly-pack h2 {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 4%;
+  text-transform: capitalize;
+}
+
+.monthly-pack .car-line {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.monthly-pack h2 {
-  color: white;
+.monthly-pack .car-line::before {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  top: 18px;
+  left: 44%;
+  height: 2px;
+  width: 50px;
+}
+
+.monthly-pack .car-line .fa-car {
+  padding-top: 10px;
+  /* import from top of rental.scss */
+  color: #ffd000;
+  font-size: 20px;
+}
+
+.monthly-pack .car-line::after {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  top: 18px;
+  right: 44%;
+  height: 2px;
+  width: 50px;
+}
+
+.monthly-pack .car-line::before {
+  background-color: white;
+}
+
+.monthly-pack .car-line::after {
+  background-color: white;
+}
+
+.monthly-pack .price-container {
+  height: 100vh;
+  margin-top: 4%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.monthly-pack .price-container .price-box {
+  height: 530px;
+  width: 29%;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+}
+
+.monthly-pack .price-container .price-box h3 {
+  text-align: center;
+  color: #ffffff;
+  padding: 8% 0 2% 0;
+}
+
+.monthly-pack .price-container .price-box h1 {
+  color: #ffd000;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.monthly-pack .price-container .price-box p {
+  color: #ffffff;
+  text-align: center;
+}
+
+.monthly-pack .price-container .price-box hr {
+  background-color: #ffffff;
 }
 
 /* end of monthly price for clients */
 /* testimonials */
 .testimonials {
-  height: 60vh;
   width: 90%;
-  background-color: grey;
   margin: 8% auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .testimonials h2 {
-  color: white;
+  text-align: center;
+}
+
+.testimonials h6 {
+  margin-top: 7px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.testimonials .box-line {
+  /* import from mixin.scss */
+  margin-top: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.testimonials .box-line .box {
+  height: 200px;
+  width: 31.5%;
+  border-radius: 6px;
+  background-color: #f3f3fb;
+  -webkit-transition: all .3s ease-in-out 0.2s;
+  transition: all .3s ease-in-out 0.2s;
+}
+
+.testimonials .box-line .box h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.testimonials .box-line .box h3 .fal {
+  padding-right: 15px;
+}
+
+.testimonials .box-line .box p {
+  font-size: 14px;
+  color: #333 !important;
+}
+
+.testimonials .box-line .box:hover {
+  /* import from top of rental.scss */
+  -webkit-box-shadow: -14px -14px 12px rgba(157, 157, 157, 0.5), 14px 14px 12px rgba(157, 157, 157, 0.5);
+          box-shadow: -14px -14px 12px rgba(157, 157, 157, 0.5), 14px 14px 12px rgba(157, 157, 157, 0.5);
+  cursor: pointer;
+}
+
+.testimonials .box-line h3 {
+  text-align: center;
+  padding: 20px 0 15px 0;
+}
+
+.testimonials .box-line p {
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+.testimonials .box-line .staricon-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+
+.testimonials .box-line .staricon-parent .staricon {
+  color: #ffd000 !important;
+  font-size: 17px;
+}
+
+.testimonials .box-line .staricon-parent .norate {
+  color: #333 !important;
+  font-size: 17px;
 }
 
 /* end of testimonials */
@@ -1492,6 +2257,7 @@ nav ul li a:hover {
   position: relative;
   height: 50vh;
   width: 100%;
+  margin-top: 8%;
   background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1499,9 +2265,6 @@ nav ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .support-team .support-bgimg {
@@ -1516,17 +2279,66 @@ nav ul li a:hover {
 .support-team .inner-support {
   width: 70%;
   height: 70%;
+  z-index: 1;
 }
 
 .support-team .inner-support h2 {
+  padding-top: 25px;
   font-size: 32px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
 }
 
+.support-team .inner-support .car-line {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.support-team .inner-support .car-line::before {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  top: 18px;
+  left: 44%;
+  height: 2px;
+  width: 50px;
+}
+
+.support-team .inner-support .car-line .fa-car {
+  padding-top: 10px;
+  /* import from top of rental.scss */
+  color: #ffd000;
+  font-size: 20px;
+}
+
+.support-team .inner-support .car-line::after {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  top: 18px;
+  right: 44%;
+  height: 2px;
+  width: 50px;
+}
+
+.support-team .inner-support .car-line::before {
+  background-color: #ffffff;
+  left: 42%;
+}
+
+.support-team .inner-support .car-line::after {
+  background-color: #ffffff;
+  right: 42%;
+}
+
 .support-team .inner-support p {
-  padding: 2% 0 2% 0;
+  padding: 2% 0 1.3% 0;
   text-align: center;
   font-size: 14px;
   color: #ffffff;
@@ -1534,14 +2346,15 @@ nav ul li a:hover {
 
 .support-team .inner-support button {
   color: #ffffff;
+  font-weight: 500;
   border: none;
   outline: none;
   background: -webkit-gradient(linear, left top, right top, from(#ff4e50), to(#f9d423));
   background: linear-gradient(to right, #ff4e50, #f9d423);
   border-radius: 6px;
-  -webkit-transition: all 1s ease-in-out .2s;
-  transition: all 1s ease-in-out .2s;
-  position: absolute;
+  -webkit-transition: all .6s ease-in-out .2s;
+  transition: all .6s ease-in-out .2s;
+  position: relative;
   font-size: 13px;
   left: 40%;
   height: 40px;
@@ -1550,14 +2363,104 @@ nav ul li a:hover {
 
 .support-team .inner-support button:hover {
   cursor: pointer;
-  font-weight: 700;
   color: #4b431f;
-  border: 2px solid #665f3e;
   background: -webkit-gradient(linear, right top, left top, from(#ff4e50), to(#f9d423));
   background: linear-gradient(to left, #ff4e50, #f9d423);
 }
 
 /* end of support team */
+/* car-blog */
+.car-blog {
+  height: 88vh;
+  width: 90%;
+  margin: 8% auto;
+}
+
+.car-blog h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  color: #333;
+}
+
+.car-blog .blog-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.car-blog .blog-box .blog-content {
+  position: relative;
+  margin-top: 5%;
+  height: 380px;
+  width: 260px;
+}
+
+.car-blog .blog-box .blog-content img {
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  -webkit-transition: all 0.3s ease-in-out 0.2s;
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.car-blog .blog-box .blog-content h6 {
+  margin-top: 15px;
+  background-color: #333 !important;
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px;
+  width: 90px;
+  border-radius: 2px;
+}
+
+.car-blog .blog-box .blog-content a {
+  text-decoration: none;
+}
+
+.car-blog .blog-box .blog-content h3 {
+  color: #333;
+  font-size: 17px;
+  font-weight: 800;
+  margin-top: 15px;
+  -webkit-transition: all 0.3s ease-in-out 0.2s;
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.car-blog .blog-box .blog-content p {
+  color: #333 !important;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.car-blog .blog-box .blog-content .likes {
+  position: absolute;
+  color: #777777 !important;
+  font-size: 14px;
+}
+
+.car-blog .blog-box .blog-content .comments {
+  position: absolute;
+  font-size: 14px;
+  color: #777777 !important;
+  right: 6px;
+}
+
+.car-blog .blog-box .blog-content:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.car-blog .blog-box .blog-content:hover h3 {
+  cursor: pointer;
+  color: #666666;
+}
+
+/* end of car-blog */
 body {
   margin: 0;
   padding: 0;
@@ -1617,7 +2520,7 @@ section {
   padding: 0 30px 0 30px;
 }
 
-#staricon {
+.ratting .material-icons {
   padding-top: 4px;
   font-size: 19px;
   color: #eb2f64;
@@ -1641,7 +2544,7 @@ section {
 }
 
 .location-right .location a {
-  color: #2c2525;
+  color: #eb2f64;
   text-decoration: none;
 }
 
@@ -1661,12 +2564,13 @@ section {
 .overallratting .numberrate {
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 19px;
   padding-top: 7px;
 }
 
 .overallratting .allratting {
   text-align: center;
+  font-size: 11px;
   color: white;
 }
 
@@ -1677,6 +2581,25 @@ section {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.main .row {
+  border-bottom: 1px solid #e8e3e3;
+  padding-bottom: 4%;
+}
+
+.main .row .float-left {
+  padding: 20px 80px 10px 20px;
+  font-size: 13px;
+}
+
+.main .row .float-right {
+  font-size: 13px;
+  padding-top: 23px;
+}
+
+.main .row .fa-angle-right {
+  padding-top: 10px;
 }
 
 .center-content {
@@ -1703,25 +2626,6 @@ section {
 
 .center-content .second-paragraph {
   padding-top: 4%;
-}
-
-.row {
-  border-bottom: 1px solid #e8e3e3;
-  padding-bottom: 4%;
-}
-
-.row .float-left {
-  padding: 20px 80px 10px 20px;
-  font-size: 13px;
-}
-
-.row .float-right {
-  font-size: 13px;
-  padding-top: 23px;
-}
-
-.row .fa-angle-right {
-  padding-top: 10px;
 }
 
 .row1 {
@@ -1788,6 +2692,7 @@ section {
 
 .reviewdate {
   font-size: 11px;
+  font-weight: 200;
   padding-left: 73px;
 }
 

@@ -16,26 +16,8 @@
   <!---------------Font Awesome----------------->
   <link href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css" rel="stylesheet">
 
-  <!-------------------for bootstrap--------------------------->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
   <!--------custom js------>
   <script type="text/javascript" src="js/script.js"></script>
@@ -49,10 +31,10 @@
 
   <style type="text/css">
     .sidenav {
-      height: 571vh;
+      height: 100%;
       width: 0;
       z-index: 1;
-      position: absolute;
+      position: fixed;
       top: 63px;
       left: 0;
       background-color: #333;
@@ -60,6 +42,19 @@
       transition: 0.5s;
       padding-top: 70px;
     }
+
+    /*---------slide show---------*/
+    .carousel {
+    top: -5px;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+    height: 30px;
+    width: 30px;
+    }
+
+    /*---------end slide show---------*/
   </style>
 
 </head>
@@ -362,7 +357,7 @@
 
     <!--------trending box for our special-->
     <div class="trendingbox">
-      <div class="trendingheading">OUR Special Packages</div>
+      <div class="trendingheading">Our Special Packages</div>
     </div>
 
     <!--trending section for our special-->
@@ -542,19 +537,22 @@
         <div class="whywe-inner-box">
           <img src="images/trust.png" alt="trust advisor img">
           <div class="whywe-heading-text">Trusted Advisor</div>
-          <div class="whywe-text-1">Over 70 years of expertise within innivationat its core.We pioneered group travel in india & are continuosly evolving and investing in leading edge technology for a perfect holiday.</div>
+          <div class="whywe-text-1">Over 70 years of expertise within innivationat its core.We pioneered group travel in
+            india & are continuosly evolving and investing in leading edge technology for a perfect holiday.</div>
         </div>
 
         <div class="whywe-inner-box">
           <img src="images/responsive.png" alt="responsive img">
           <div class="whywe-heading-text">Responsive</div>
-          <div class="whywe-text-2">Our Holidays are co-created with our customers,ensuring suggestions and feedback are the basis of creating magical holidays .</div>
+          <div class="whywe-text-2">Our Holidays are co-created with our customers,ensuring suggestions and feedback are
+            the basis of creating magical holidays .</div>
         </div>
 
         <div class="whywe-inner-box">
           <img src="images/memory.png" alt="memorable img">
-          <div class="whywe-heading-text">Memorable <br> Experiances</div>
-          <div class="whywe-text-3">Join our family - Over 5 lac customers have created their most memorable Experiances with us . </div>
+          <div class="whywe-heading-text">Memorable Experiances</div>
+          <div class="whywe-text-3">Join our family - Over 5 lac customers have created their most memorable Experiances
+            with us . </div>
         </div>
 
         <div class="whywe-inner-box">
@@ -567,7 +565,8 @@
         <div class="whywe-inner-box-last">
           <img src="images/connect.png" alt="recognise img">
           <div class="whywe-heading-text">Recognise & Connect</div>
-          <div class="whywe-text-5">An experianced team of over 1000 travel professionals across 160+ touch points in India & NRI markets to cater to your travel needs . </div>
+          <div class="whywe-text-5">An experianced team of over 1000 travel professionals across 160+ touch points in
+            India & NRI markets to cater to your travel needs . </div>
         </div>
 
       </div>
@@ -582,13 +581,10 @@
 
       <div class="submitform">
         <form>
-          <input class="form-control textfield" type="text" name="name" placeholder="Name"
-            required="required">
-          <input class="form-control textfield" type="text" name="mobile" placeholder="Mobile"
-            required="required">
-          <input class="form-control textfield" type="email" name="email" placeholder="Email"
-            required="required">
-          <span class="checkbox"><input type="checkbox">I hereby accept the <U><a href="#">privacy policy </a></U>and
+          <input class="form-control textfield" type="text" name="name" placeholder="Name" required="required">
+          <input class="form-control textfield" type="text" name="mobile" placeholder="Mobile" required="required">
+          <input class="form-control textfield" type="email" name="email" placeholder="Email" required="required">
+          <span class="checkbox"><input type="checkbox"> I hereby accept the <U><a href="#">privacy policy </a></U>and
             authorize blank and its representatives to contact me.</span>
           <button id="contactbtn" class="btn btn-secondary btn-lg active" role="button"
             aria-pressed="true">Submit</button>
@@ -623,11 +619,12 @@
       </div>
 
       <div class="followus">
-        <a href="#" id="sicon" class="fab fa-facebook-f"></a>
-        <a href="#" id="sicon" class="fab fa-youtube"></a>
-        <a href="#" id="sicon" class="fab fa-pinterest"></a>
-        <a href="#" id="sicon" class="fab fa-instagram"></a>
-        <a href="#" id="sicon" class="fab fa-linkedin-in"></a>
+        <a href="#" class="fab fa-facebook-f sicon"></a>
+        <a href="#" class="fab fa-youtube sicon"></a>
+        <a href="#" class="fab fa-pinterest sicon"></a>
+        <a href="#" class="fab fa-instagram sicon"></a>
+        <a href="#" class="fab fa-linkedin-in sicon"></a>
+        <a href="#"><i class="fab fa-twitter sicon"></i></a>
 
 
       </div>
@@ -674,6 +671,11 @@
         preloader.style.display = 'none';
       };
     </script>
+
+    <!-- bootstrap  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
