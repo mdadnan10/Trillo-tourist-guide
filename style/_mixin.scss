@@ -121,13 +121,12 @@ $anglecolor: rgb(74, 74, 74);
 
           & p {
                font-size: 14px;
-               color: #333 !important;
+               color: $b3color !important;
           }
 
           &:hover {
                /* import from top of rental.scss */
-               box-shadow: -14px -14px 12px rgba(157, 157, 157, 0.5),
-                    14px 14px 12px rgba(157, 157, 157, 0.5);
+               box-shadow: 0 20px 20px #777;
                cursor: pointer;
           }
      }
@@ -182,13 +181,13 @@ $anglecolor: rgb(74, 74, 74);
           height: 350px;
           width: 360px;
           box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
-          border-bottom-left-radius: 4px;
-          border-bottom-right-radius: 4px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
 
           & img {
                width: 100%;
-               border-top-left-radius: 4px;
-               border-top-right-radius: 4px;
+               border-top-left-radius: 5px;
+               border-top-right-radius: 5px;
           }
 
           & .carname-price {
@@ -211,7 +210,7 @@ $anglecolor: rgb(74, 74, 74);
 
           & p {
                color: $b3color;
-               font-size: 15px;
+               font-size: 14px;
                margin-left: 10px;
                font-weight: 400;
 
@@ -224,7 +223,7 @@ $anglecolor: rgb(74, 74, 74);
                     text-decoration: none;
                     color: $b3color;
                     border: .1px solid rgba(122, 98, 98, 0.712);
-                    border-radius: 3px;
+                    border-radius: 5px;
                     padding: 2px 10px 2px 10px;
                     margin-right: 5px;
 
@@ -235,4 +234,5 @@ $anglecolor: rgb(74, 74, 74);
           }
      }
 }
+
 /* end of different car model box design */

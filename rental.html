@@ -1000,71 +1000,129 @@
       <span class="car-line"><i class="fad fa-car"></i></span>
       <h6>Who are in extremely love with eco friendly system.</h6>
 
-      <div class="box-line">
+      <div class="slideshow-container">
 
-        <div class="box">
-          <h3> Arun M</h3>
-          <p>Great journey with you, what a fantastic service provided by dummy car, I am extremly satisfied.Hope we
-            meet again.</p>
-          <span class="staricon-parent"><i class="material-icons staricon">star</i><i
-              class="material-icons staricon">star</i><i class="material-icons staricon">star</i><i
-              class="material-icons staricon">star</i><i class="material-icons staricon">star</i> </span>
+        <div class="mySlides">
+          <div class="testimonial-box">
+            <img src="./images/smith.jpg" alt="Smith">
+            <div class="review">
+              <p>Great journey with you, what a fantastic service provided by dummy car, I am extremly satisfied. Hope
+                we meet again.</p>
+              <span class="Icon-with-name">
+                <h5>SMITH ADS</h5>
+                <i class="material-icons staricon">star</i><i class="material-icons staricon">star</i>
+                <i class="material-icons staricon">star</i><i class="material-icons staricon">star</i>
+                <i class="material-icons staricon">star</i>
+              </span>
+            </div>
+          </div>
         </div>
 
-        <div class="box">
-          <h3> Diptarko C</h3>
-          <p>At the outset, let me thank you for introducing dummycar in Bhubaneswar. Your customer support was
-            impeccable.</p>
-          <span class="staricon-parent"><i class="material-icons staricon">star</i><i
-              class="material-icons staricon">star</i><i class="material-icons staricon">star</i><i
-              class="material-icons norate">star</i><i class="material-icons norate">star</i> </span>
+        <div class="mySlides">
+          <div class="testimonial-box">
+            <img src="./images/atex.jpg" alt="Diptarko">
+
+            <div class="review">
+              <p>At the outset, let me thank you for introducing dummycar in Bhubaneswar. Your customer support was
+                impeccable.</p>
+
+              <span class="Icon-with-name">
+                <h5>Diptarko</h5>
+                <i class="material-icons staricon">star</i><i class="material-icons staricon">star</i>
+                <i class="material-icons staricon">star</i><i class="material-icons staricon">star</i>
+                <i class="material-icons staricon">star</i>
+              </span>
+            </div>
+          </div>
         </div>
 
-        <div class="box">
-          <h3>Bejoy Babu</h3>
-          <p>I just wanted to let you know that I really appreciate the efforts you are making personally, to ensure
-            that the
-            customer is satisfied.</p>
-          <span class="staricon-parent"><i class="material-icons staricon">star</i><i
-              class="material-icons staricon">star</i><i class="material-icons staricon">star</i><i
-              class="material-icons staricon">star</i><i class="material-icons norate">star</i> </span>
+        <div class="mySlides">
+
+          <div class="testimonial-box">
+            <img src="./images/tuni.jpg" alt="Tuni">
+
+            <div class="review">
+              <p>It was great pleasure use your service, As all process being online it was really hassle free
+                experience. Good service please keep it going.</p>
+
+              <span class="Icon-with-name">
+                <h5>D.Samuel</h5>
+                <i class="material-icons staricon">star</i><i class="material-icons staricon">star</i>
+                <i class="material-icons staricon">star</i><i class="material-icons staricon">star</i>
+                <i class="material-icons staricon">star</i>
+              </span>
+
+            </div>
+          </div>
         </div>
+
       </div>
+      <br>
 
-      <div class="box-line">
-
-        <div class="box">
-          <h3>Deepak Sharma</h3>
-          <p>You certainly do have a very regular customer here... Must say, Greg went that extra mile... You have a
-            great journey
-            together!</p>
-          <span class="staricon-parent"><i class="material-icons staricon">star</i><i
-              class="material-icons staricon">star</i><i class="material-icons staricon">star</i><i
-              class="material-icons norate">star</i><i class="material-icons norate">star</i> </span>
-        </div>
-
-        <div class="box">
-          <h3> Mustak R</h3>
-          <p>It was great pleasure use your service, As all process being online it was really hassle free experience.
-            good service
-            please keep it going.</p>
-          <span class="staricon-parent"><i class="material-icons staricon">star</i><i
-              class="material-icons staricon">star</i><i class="material-icons staricon">star</i><i
-              class="material-icons staricon">star</i><i class="material-icons staricon">star</i></span>
-        </div>
-
-        <div class="box">
-          <h3> D.Samuel</h3>
-          <p>I could not believe my ears on the benefits. I would surely continue to use your
-            professional services in months to come.</p>
-          <span class="staricon-parent"><i class="material-icons staricon">star</i><i
-              class="material-icons staricon">star</i><i class="material-icons staricon">star</i><i
-              class="material-icons norate">star</i><i class="material-icons norate">star</i> </span>
-        </div>
+      <div style="text-align:center">
+        <span class="testimonialdot" onclick="currentSlide(1)"></span>
+        <span class="testimonialdot" onclick="currentSlide(2)"></span>
+        <span class="testimonialdot" onclick="currentSlide(3)"></span>
       </div>
 
 
     </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("testimonialdot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+      /* automatic js */
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("testimonialdot");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+          slideIndex
+            = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(carousel, 4000);
+      }
+    </script>
     <!--end of testimonials  -->
 
     <!-- support teams  -->
@@ -1093,9 +1151,9 @@
           <img src="./images/car-blog1.jpg" alt="blog1 image">
           <h6>10 JAN 2020</h6>
           <a href="rental.html">
-            <h3>A Beautiful tour to Nandankanan</h3>
+            <h3>A Beautiful View of our ever green Botanical Garden</h3>
           </a>
-          <p>Explore the beauty of Nandankanan Zoo with us.</p>
+          <p>Explore the beauty of Nandankanan Zoo and botanical garden with us.</p>
           <span class="likes"><i class="fal fa-heart"></i> 15 Likes </span>
           <span class="comments"><i class="fal fa-comment"></i> 02 Comments </span>
         </div>

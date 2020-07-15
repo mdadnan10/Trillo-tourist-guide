@@ -1053,7 +1053,7 @@ nav ul li a:hover {
   width: 100%;
   height: 120vh;
   background: #fff url("../images/preloaderrental.gif") no-repeat center;
-  z-index: 9;
+  z-index: 999;
 }
 
 /* home display image and its form */
@@ -1389,8 +1389,8 @@ nav ul li a:hover {
 
 .our-services .box-line .box:hover {
   /* import from top of rental.scss */
-  -webkit-box-shadow: -14px -14px 12px rgba(157, 157, 157, 0.5), 14px 14px 12px rgba(157, 157, 157, 0.5);
-          box-shadow: -14px -14px 12px rgba(157, 157, 157, 0.5), 14px 14px 12px rgba(157, 157, 157, 0.5);
+  -webkit-box-shadow: 0 20px 20px #777;
+          box-shadow: 0 20px 20px #777;
   cursor: pointer;
 }
 
@@ -1591,7 +1591,7 @@ nav ul li a:hover {
 
 .happy-serivices .clients-bgimg {
   position: absolute;
-  background-image: url(../images/happyservices.jpg);
+  background-image: url("../images/happyservices.jpg");
   background-size: cover;
   background-position: center center;
   height: 100%;
@@ -1747,14 +1747,14 @@ nav ul li a:hover {
   width: 360px;
   -webkit-box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
           box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .select-car-model .container .audi-box .car-model-box img {
   width: 100%;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .select-car-model .container .audi-box .car-model-box .carname-price {
@@ -1781,7 +1781,7 @@ nav ul li a:hover {
 
 .select-car-model .container .audi-box .car-model-box p {
   color: #333;
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 10px;
   font-weight: 400;
 }
@@ -1794,7 +1794,7 @@ nav ul li a:hover {
   text-decoration: none;
   color: #333;
   border: 0.1px solid rgba(122, 98, 98, 0.712);
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 2px 10px 2px 10px;
   margin-right: 5px;
 }
@@ -1816,14 +1816,14 @@ nav ul li a:hover {
   width: 360px;
   -webkit-box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
           box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .select-car-model .container .bmw-box .car-model-box img {
   width: 100%;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .select-car-model .container .bmw-box .car-model-box .carname-price {
@@ -1850,7 +1850,7 @@ nav ul li a:hover {
 
 .select-car-model .container .bmw-box .car-model-box p {
   color: #333;
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 10px;
   font-weight: 400;
 }
@@ -1863,7 +1863,7 @@ nav ul li a:hover {
   text-decoration: none;
   color: #333;
   border: 0.1px solid rgba(122, 98, 98, 0.712);
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 2px 10px 2px 10px;
   margin-right: 5px;
 }
@@ -1885,14 +1885,14 @@ nav ul li a:hover {
   width: 360px;
   -webkit-box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
           box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .select-car-model .container .ferrari-box .car-model-box img {
   width: 100%;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .select-car-model .container .ferrari-box .car-model-box .carname-price {
@@ -1919,7 +1919,7 @@ nav ul li a:hover {
 
 .select-car-model .container .ferrari-box .car-model-box p {
   color: #333;
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 10px;
   font-weight: 400;
 }
@@ -1932,7 +1932,7 @@ nav ul li a:hover {
   text-decoration: none;
   color: #333;
   border: 0.1px solid rgba(122, 98, 98, 0.712);
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 2px 10px 2px 10px;
   margin-right: 5px;
 }
@@ -1954,14 +1954,14 @@ nav ul li a:hover {
   width: 360px;
   -webkit-box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
           box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .select-car-model .container .toyota-box .car-model-box img {
   width: 100%;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .select-car-model .container .toyota-box .car-model-box .carname-price {
@@ -1988,7 +1988,7 @@ nav ul li a:hover {
 
 .select-car-model .container .toyota-box .car-model-box p {
   color: #333;
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 10px;
   font-weight: 400;
 }
@@ -2001,7 +2001,7 @@ nav ul li a:hover {
   text-decoration: none;
   color: #333;
   border: 0.1px solid rgba(122, 98, 98, 0.712);
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 2px 10px 2px 10px;
   margin-right: 5px;
 }
@@ -2011,7 +2011,7 @@ nav ul li a:hover {
 }
 
 .select-car-model .container a.nav-item.nav-link {
-  border: .2px solid gray;
+  border: 0.6px solid #cebfbf;
   padding: 12px 0 12px 0;
   color: #333;
   font-size: 18px;
@@ -2020,7 +2020,7 @@ nav ul li a:hover {
 }
 
 .select-car-model .container a.nav-item.nav-link.active {
-  color: #333;
+  color: #ffffff;
   font-size: 18px;
   background: #ffd000;
   border-radius: 0;
@@ -2061,7 +2061,7 @@ nav ul li a:hover {
 }
 
 .monthly-pack .monthly-pack-bgimg {
-  background-image: url(../images/ourmembership.jpg);
+  background-image: url("../images/ourmembership.jpg");
   background-position: center center;
   height: 100%;
   width: 100%;
@@ -2167,6 +2167,8 @@ nav ul li a:hover {
 .testimonials {
   width: 90%;
   margin: 8% auto;
+  /* Slideshow container */
+  /* The dots/bullets/indicators */
 }
 
 .testimonials h2 {
@@ -2179,76 +2181,113 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.testimonials .box-line {
-  /* import from mixin.scss */
-  margin-top: 6%;
+.testimonials .slideshow-container {
+  width: 70%;
+  height: 171px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 80px;
+  border: .5px solid #bbb;
+}
+
+.testimonials .slideshow-container .mySlides {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.testimonials .slideshow-container .mySlides .testimonial-box {
+  width: 100%;
+  background: #1e2228;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 40px;
+  height: 170px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: none;
 }
 
-.testimonials .box-line .box {
-  height: 200px;
-  width: 31.5%;
-  border-radius: 6px;
-  background-color: #f3f3fb;
-  -webkit-transition: all .3s ease-in-out 0.2s;
-  transition: all .3s ease-in-out 0.2s;
+.testimonials .slideshow-container .mySlides .testimonial-box::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  height: 170px;
+  width: 72px;
+  -webkit-transform: skewx(-30deg);
+          transform: skewx(-30deg);
+  border-right: 4px solid #ffd000;
+  z-index: 1;
 }
 
-.testimonials .box-line .box h3 {
-  font-size: 18px;
-  font-weight: 700;
+.testimonials .slideshow-container .mySlides .testimonial-box::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 50px;
+  top: 0;
+  background-color: #ffffff;
 }
 
-.testimonials .box-line .box h3 .fal {
-  padding-right: 15px;
+.testimonials .slideshow-container .mySlides .testimonial-box img {
+  height: 100px;
+  width: 100px;
+  margin-left: 40px;
+  border: 4px solid #ffd000;
+  z-index: 10;
 }
 
-.testimonials .box-line .box p {
-  font-size: 14px;
-  color: #333 !important;
+.testimonials .slideshow-container .mySlides .testimonial-box .review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.testimonials .box-line .box:hover {
-  /* import from top of rental.scss */
-  -webkit-box-shadow: -14px -14px 12px rgba(157, 157, 157, 0.5), 14px 14px 12px rgba(157, 157, 157, 0.5);
-          box-shadow: -14px -14px 12px rgba(157, 157, 157, 0.5), 14px 14px 12px rgba(157, 157, 157, 0.5);
+.testimonials .slideshow-container .mySlides .testimonial-box .review p {
+  color: #ffffff;
+  padding: 0 30px;
+}
+
+.testimonials .slideshow-container .mySlides .testimonial-box .review .Icon-with-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.testimonials .slideshow-container .mySlides .testimonial-box .review .Icon-with-name h5 {
+  text-transform: uppercase;
+  color: #ffd000;
+  padding: 0 100px 0 30px;
+}
+
+.testimonials .slideshow-container .mySlides .testimonial-box .review .Icon-with-name .staricon {
+  color: #ffd000;
+  font-size: 20px;
+  padding: 3px 3px 0 0;
+}
+
+.testimonials .testimonialdot {
   cursor: pointer;
+  height: 6px;
+  width: 40px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border: 0.1px solid #ffd000;
+  border-radius: 10px;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
 }
 
-.testimonials .box-line h3 {
-  text-align: center;
-  padding: 20px 0 15px 0;
-}
-
-.testimonials .box-line p {
-  text-align: center;
-  padding: 0 20px 0 20px;
-}
-
-.testimonials .box-line .staricon-parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 25px;
-}
-
-.testimonials .box-line .staricon-parent .staricon {
-  color: #ffd000 !important;
-  font-size: 17px;
-}
-
-.testimonials .box-line .staricon-parent .norate {
-  color: #333 !important;
-  font-size: 17px;
+.testimonials .active,
+.testimonials .testimonialdot:hover {
+  background-color: #ffd000;
 }
 
 /* end of testimonials */
@@ -2269,7 +2308,7 @@ nav ul li a:hover {
 
 .support-team .support-bgimg {
   position: absolute;
-  background-image: url(../images/oursupportteam.jpg);
+  background-image: url("../images/oursupportteam.jpg");
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -2415,7 +2454,7 @@ nav ul li a:hover {
   font-weight: 500;
   padding: 8px;
   width: 90px;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .car-blog .blog-box .blog-content a {

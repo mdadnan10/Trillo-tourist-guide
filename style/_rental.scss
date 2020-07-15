@@ -9,7 +9,7 @@ $colormain: #ffd000;
      width: 100%;
      height: 120vh;
      background: #fff url('../images/preloaderrental.gif') no-repeat center;
-     z-index: 9;
+     z-index: 999;
 }
 
 /* home display image and its form */
@@ -365,7 +365,7 @@ $colormain: #ffd000;
 
      & .clients-bgimg {
           position: absolute;
-          background-image: url(../images/happyservices.jpg);
+          background-image: url('../images/happyservices.jpg');
           background-size: cover;
           background-position: center center;
           height: 100%;
@@ -439,7 +439,7 @@ $colormain: #ffd000;
           }
 
           a.nav-item.nav-link {
-               border: .2px solid gray;
+               border: .6px solid rgb(206, 191, 191);
                padding: 12px 0 12px 0;
                color: $b3color;
                font-size: 18px;
@@ -448,7 +448,7 @@ $colormain: #ffd000;
           }
 
           a.nav-item.nav-link.active {
-               color: $b3color;
+               color: $fcolor;
                font-size: 18px;
                background: $colormain;
                border-radius: 0;
@@ -490,7 +490,7 @@ $colormain: #ffd000;
      z-index: -2;
 
      & .monthly-pack-bgimg {
-          background-image: url(../images/ourmembership.jpg);
+          background-image: url('../images/ourmembership.jpg');
           background-position: center center;
           height: 100%;
           width: 100%;
@@ -572,37 +572,105 @@ $colormain: #ffd000;
           text-align: center;
      }
 
-     & .box-line {
-          /* import from mixin.scss */
-          margin-top: 6%;
-          @include box-content;
+     /* Slideshow container */
+     .slideshow-container {
+          width: 70%;
+          height: 171px;
+          position: relative;
+          margin: 0 auto;
+          margin-top: 80px;
+          border: .5px solid #bbb;
 
-          & h3 {
-               text-align: center;
-               padding: 20px 0 15px 0;
-          }
+          & .mySlides {
+               width: 100%;
+               position: absolute;
+               z-index: -1;
 
-          & p {
-               text-align: center;
-               padding: 0 20px 0 20px;
-          }
+               & .testimonial-box {
+                    width: 100%;
+                    background: #1e2228;
+                    display: flex;
+                    height: 170px;
+                    align-items: center;
+                    border-left: none;
 
-          & .staricon-parent {
-               display: flex;
-               justify-content: center;
-               margin-top: 25px;
+                    &::before {
+                         content: "";
+                         position: absolute;
+                         background-color: $fcolor;
+                         height: 170px;
+                         width: 72px;
+                         transform: skewx(-30deg);
+                         border-right: 4px solid $colormain;
+                         z-index: 1;
+                    }
 
-               & .staricon {
-                    color: $colormain !important;
-                    font-size: 17px;
-               }
+                    &::after {
+                         content: "";
+                         position: absolute;
+                         height: 100px;
+                         width: 50px;
+                         top: 0;
+                         background-color: $fcolor;
+                    }
 
-               & .norate {
-                    color: $b3color !important;
-                    font-size: 17px;
+                    & img {
+                         height: 100px;
+                         width: 100px;
+                         margin-left: 40px;
+                         border: 4px solid $colormain;
+                         z-index: 10;
+                    }
+
+                    & .review {
+                         display: flex;
+                         flex-direction: column;
+
+                         & p {
+                              color: $fcolor;
+                              padding: 0 30px;
+                         }
+
+                         & .Icon-with-name {
+                              display: flex;
+                              margin-top: 5px;
+
+                              & h5 {
+                                   text-transform: uppercase;
+                                   color: $colormain;
+                                   padding: 0 100px 0 30px;
+                              }
+
+                              & .staricon {
+                                   color: $colormain;
+                                   font-size: 20px;
+                                   padding: 3px 3px 0 0;
+                              }
+                         }
+
+                    }
                }
           }
      }
+
+     /* The dots/bullets/indicators */
+     .testimonialdot {
+          cursor: pointer;
+          height: 6px;
+          width: 40px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border: .1px solid $colormain;
+          border-radius: 10px;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+     }
+
+     .active,
+     .testimonialdot:hover {
+          background-color: $colormain;
+     }
+
 }
 
 /* end of testimonials */
@@ -619,7 +687,7 @@ $colormain: #ffd000;
 
      & .support-bgimg {
           position: absolute;
-          background-image: url(../images/oursupportteam.jpg);
+          background-image: url('../images/oursupportteam.jpg');
           height: 100%;
           width: 100%;
           background-position: center center;
@@ -711,7 +779,7 @@ $colormain: #ffd000;
                     font-weight: 500;
                     padding: 8px;
                     width: 90px;
-                    border-radius: 2px;
+                    border-radius: 4px;
                }
 
                & a {
