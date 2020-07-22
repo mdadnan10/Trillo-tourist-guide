@@ -17,7 +17,7 @@
   <link href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
   <!--------custom js------>
   <script type="text/javascript" src="js/script.js"></script>
@@ -49,7 +49,11 @@
   <!--_________________________start of navbar___________________________-->
   <nav>
     <span class="navicon" style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+
+    <div class="navbar-conatiner"> 
+    <div class="logo-box">
+      <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+    </div>
 
     <!--_________________________search bar___________________________-->
 
@@ -59,16 +63,19 @@
         <a href="#"><i class="fas fa-search"></i></a>
       </form>
     </div>
-    <!--_________________________search bar___________________________-->
+    <!--_________________________end search bar___________________________-->
 
     <!--_________________________navbar links___________________________-->
+    <div class="profile-noti">
+      <ul>
+        <li><a href="#"><i class="fas fa-bookmark"></i><span class="notification">7</span></a></li>
+        <li><a href="#"><i class="fas fa-comments-alt"></i><span class="notification">13</span></a></li>
+        <li><a href="#" style="text-decoration: none;"><img id="profile-img" src="images/profile.png" alt="profile">&nbsp
+            Jonas</a></li>
+      </ul>
+    </div>
 
-    <ul>
-      <li><a href="#"><i id="bookmark" class="fas fa-bookmark"></i><span class="notification">7</span></a></li>
-      <li><a href="#"><i id="message" class="fas fa-comments-alt"></i><span class="notification">13</span></a></li>
-      <li><a href="#" style="text-decoration: none;"><img id="profile" src="images/profile.png" alt="profile">&nbsp
-          Jonas</a></li>
-    </ul>
+    </div>
   </nav>
   <!--_________________________end of navbar___________________________-->
 
@@ -86,11 +93,9 @@
 
   <!--_________________________end side nav___________________________-->
 
+  
+  <!--____________________start of main content________________________-->
   <div id="main">
-
-    <!--_________________________start side nav___________________________-->
-
-    <!--____________________start of main content________________________-->
 
     <section>
 
@@ -105,9 +110,8 @@
       <!--_________________________ratting section___________________________-->
       <div class="ratting">
         <div class="hname">HOTEL LAS PALMAS</div>
-        <span><i class="material-icons">star</i><i class="material-icons">star</i><i
-           class="material-icons">star</i><i class="material-icons">star</i><i
-           class="material-icons">star</i> </span>
+        <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i
+            class="material-icons">star</i><i class="material-icons">star</i> </span>
 
         <div class="location-right">
           <div class="location">
@@ -127,9 +131,12 @@
       <div class="main">
 
         <div class="center-content">
-          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, beatae. Harum consequuntur labore, placeat aut explicabo illum necessitatibus temporibus velit aliquid, itaque voluptate id animi ipsam quibusdam eius! Laboriosam tenetur minima sit nam quae?
+          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, beatae. Harum
+            consequuntur labore, placeat aut explicabo illum necessitatibus temporibus velit aliquid, itaque voluptate
+            id animi ipsam quibusdam eius! Laboriosam tenetur minima sit nam quae?
 
-            <p class="second-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minima fuga quam libero nemo blanditiis, necessitatibus officia placeat ea nostrum.</p>
+            <p class="second-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minima fuga quam
+              libero nemo blanditiis, necessitatibus officia placeat ea nostrum.</p>
 
           </div>
 
@@ -164,7 +171,8 @@
         <!--_________________________rating by Reviewer___________________________-->
         <div class="profilequotes">
           <i class="fas fa-quote-left"></i>
-          <div class="profiletext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia corrupti ex sit sed labore esse odit sequi rem, laboriosam reprehenderit!</div>
+          <div class="profiletext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia corrupti ex sit sed
+            labore esse odit sequi rem laboriosam.</div>
           <div class="quotesimage"><img src="images/nick.jpg" alt="quotes profile"></div>
           <div class="reviewername">NICK SMITH</div>
           <div class="reviewdate">Feb 23rd, 2017</div>
@@ -173,7 +181,8 @@
           <!--_________________________quotes___________________________-->
           <div class="quotes">
             <i class="fas fa-quote-left"></i>
-            <div class="quotestext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores accusantium libero a? Nisi, eos.</div>
+            <div class="quotestext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aspernatur, impedit
+              fugit eum deserunt perspiciatis.</div>
             <div class="quotesimage"><img src="images/mary.jpg" alt="quotes profile"></div>
             <div class="reviewername">MARY THOMAS</div>
             <div class="reviewdate">Sep 13th, 2016</div>
@@ -203,10 +212,10 @@
     };
   </script>
 
- <!-- bootstrap  -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- bootstrap  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

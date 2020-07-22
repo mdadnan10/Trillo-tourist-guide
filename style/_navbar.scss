@@ -2,82 +2,93 @@
 @import "./mixin";
 
 nav {
-     height: 71px;
+     height: 64px;
      width: 100%;
-     margin-top: -8px;
+     display: flex;
 
-     & ul {
-          padding: 0;
-          margin: 0;
-          float: right;
-          margin-right: 1px;
+     & .navbar-conatiner {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
 
-          & li {
-               position: relative;
-               list-style: none;
-               display: inline-block;
+          & .logo-box {
+               height: 100%;
+               display: flex;
+               align-items: center;
 
-               & a {
-                    display: block;
-                    text-decoration: none;
-
-                    /* import from variables.scss */
-                    font-size: $size15;
-                    color: $anchortag;
-                    margin-top: 27px;
-                    line-height: 30px;
-                    padding: 0 16px;
-                    font-family: 'Arimo', sans-serif;
-
-                    &:hover {
-                         color: rgb(76, 124, 80);
-                    }
+               & .logo {
+                    float: left;
+                    height: 37px;
                }
           }
+
+          & .profile-noti {
+               & ul {
+                    height: 100%;
+                    width: 210px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding-inline-start: 0px;
+                    margin: 0;
+
+                    & li {
+                         position: relative;
+                         list-style: none;
+
+                         .notification {
+                              position: absolute;
+                              width: 19px;
+                              height: 19px;
+                              left: 10px;
+                              top: -12px;
+                              font-size: 10px;
+                              color: $fcolor;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              border-radius: 50px;
+                              background-color: rgb(100, 62, 68);
+                         }
+
+                         #profile-img {
+                              /* import from variables.scss */
+                              height: $profileimagesize;
+                              width: $profileimagesize;
+                              border-radius: 25px;
+                         }
+
+                         & a {
+                              text-decoration: none;
+                              /* import from variables.scss */
+                              font-size: $size15;
+                              color: $anchortag;
+                              font-family: 'Arimo', sans-serif;
+
+                              & .fas {
+                                   /* import from variables.scss */
+                                   font-size: $iconsize;
+                              }
+
+                              &:hover {
+                                   color: rgb(76, 124, 80);
+                              }
+                         }
+                    }
+               }
+
+          }
+
      }
-}
-
-.notification {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 10px;
-     height: 19px;
-     width: 19px;
-     border-radius: 50px;
-     background-color: rgb(100, 62, 68);
-     color: $fcolor;
-     position: absolute;
-     top: 19px;
-     right: 4px;
 
 }
 
-#profile {
-     margin-top: -7px;
-
-     /* import from variables.scss */
-     height: $profileimagesize;
-     width: $profileimagesize;
-     border-radius: 25px;
-}
-
-#bookmark,
-#message {
-     /* import from variables.scss */
-     font-size: $iconsize;
-}
-
-.logo {
-     float: left;
-     height: 37px;
-     margin: 20px 0 0 12px;
-}
 
 .search {
-     top: 16px;
-    position: absolute;
-    left: 27%;
+     height: 100%;
+     width: 450px;
+     display: flex;
+     align-items: center;
 
      & .searchbox {
           position: absolute;
@@ -102,9 +113,9 @@ nav {
           right: 10px;
           width: 30px;
           height: 30px;
+          text-align: center;
           /* import from variables.scss */
           color: $anchortag;
           font-size: $size15;
-          text-align: center;
      }
 }

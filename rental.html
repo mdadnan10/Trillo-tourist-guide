@@ -53,26 +53,33 @@
   <!--_________________________start of navbar___________________________-->
   <nav>
     <span class="navicon" style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+    <div class="navbar-conatiner">
+      <div class="logo-box">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+      </div>
 
-    <!--_________________________search bar___________________________-->
+      <!--_________________________search bar___________________________-->
 
-    <div class="search">
-      <form class="searchbox">
-        <input id="input" class="form-control" type="search" placeholder="Search destinations">
-        <a href="#"><i id="search" class="fas fa-search"></i></a>
-      </form>
+      <div class="search">
+        <form class="searchbox">
+          <input class="form-control" type="search" placeholder="Search hotels">
+          <a href="#"><i class="fas fa-search"></i></a>
+        </form>
+      </div>
+      <!--_________________________end search bar___________________________-->
+
+      <!--_________________________navbar links___________________________-->
+      <div class="profile-noti">
+        <ul>
+          <li><a href="#"><i class="fas fa-bookmark"></i><span class="notification">7</span></a></li>
+          <li><a href="#"><i class="fas fa-comments-alt"></i><span class="notification">13</span></a></li>
+          <li><a href="#" style="text-decoration: none;"><img id="profile-img" src="images/profile.png"
+                alt="profile">&nbsp
+              Jonas</a></li>
+        </ul>
+      </div>
+
     </div>
-    <!--_________________________search bar___________________________-->
-
-    <!--_________________________navbar links___________________________-->
-
-    <ul>
-      <li><a href="#"><i id="bookmark" class="fas fa-bookmark"></i><span class="notification">7</span></a></li>
-      <li><a href="#"><i id="message" class="fas fa-comments-alt"></i><span class="notification">13</span></a></li>
-      <li><a href="#" style="text-decoration: none;"><img id="profile" src="images/profile.png" alt="profile">&nbsp
-          Jonas</a></li>
-    </ul>
   </nav>
   <!--_________________________end of navbar___________________________-->
 
@@ -91,7 +98,7 @@
 
   <div id="main">
 
-    <!-- home main image and form for booking car  -->
+    <!--_________________home main image and form for booking car__________________-->
     <section>
       <div class="home-display">
         <img src="./images/rentalhome.jpg" alt="home page banner">
@@ -99,7 +106,8 @@
         <div class="booking-form">
           <h4>Book Your Car Today!</h4>
 
-          <form>
+          <form
+            onSubmit="alert('Thank you for booking with us.\nYou will got a confirmation message with all details.');">
             <select class="form-control input">
               <option>Select your car</option>
               <option>BMW</option>
@@ -120,24 +128,23 @@
 
             <div class="pick-up">
               <p>Pick-up Date :</p>
-              <input type="date" name="date" class="form-control date" required="required">
+              <input type="date" name="date" class="form-control date" required>
             </div>
             <div class="return">
               <p>Return Date :</p>
-              <input type="date" name="date" class="form-control date" required="required">
+              <input type="date" name="date" class="form-control date" required>
             </div>
 
 
-            <input type="text" class="form-control input" placeholder="Your name" required="required">
+            <input type="text" class="form-control input" placeholder="Your name" required>
 
-            <input type="email" class="form-control input" placeholder="Email address" required="required">
+            <input type="email" class="form-control input" placeholder="Email address" required>
 
-            <input type="tel" class="form-control input" placeholder="Phone number" required="required">
+            <input type="tel" class="form-control input" placeholder="Phone number" required>
 
-            <button type="submit" onclick="carbooking()">CONFIRM CAR BOOKING</button>
-            <form>
-
-            </form>
+            <button type="submit">CONFIRM CAR BOOKING</button>
+          </form>
+          <!--_________________________after submitting car booking form____________________-->
         </div>
 
         <div class="home-text">
@@ -150,9 +157,9 @@
       </div>
 
     </section>
-    <!-- end of home main image and booking car form  -->
+    <!--____________________end of home main image and booking car form_________________________-->
 
-    <!-- abous us and ad video section  -->
+    <!--_____________________ start of abous us and ad video section_________________________________-->
     <div class="about-us">
       <h4>ABOUT US</h4>
       <span class="car-line"><i class="fad fa-car"></i></span>
@@ -178,9 +185,10 @@
 
       </div>
     </div>
-    <!-- end of about us and ad video  -->
+    <!--________________________________end of about us and ad video______________________________________-->
 
-    <!-- our services and section  -->
+
+    <!--_______________________________start of our services and section___________________________________-->
     <div class="our-services">
       <h4>What Services we offer to our clients</h4>
       <span class="car-line"><i class="fad fa-car"></i></span>
@@ -219,9 +227,10 @@
       </div>
 
     </div>
-    <!-- end of our service section  -->
+    <!--____________________________________end of our service section__________________________-->
 
-    <!-- globally connected network  -->
+
+    <!--___________________________________start of globally connected network___________________-->
     <div class="globally-connected">
       <div class="globally-image">
         <img src="./images/globallyconnected.jpg" alt="Globally connected">
@@ -229,16 +238,16 @@
 
       <div class="globally-text">
         <h4>Globally Connected <br> by Large Network</h4>
-        <h5>We are here to listen from you deliver exellence</h5>
+        <h5>We are here to listen deliver exellence from you</h5>
         <p>we have a large network in all over the world, where ever you just ask us how can we help you we are every
           where just one click away from you.Hope you to serve whereever you go.</p>
         <button type="submit">GET DETAILS</button>
       </div>
 
     </div>
-    <!-- end of globally connected section  -->
+    <!--___________________________end of globally connected section__________________________-->
 
-    <!-- a auto slider page banner  -->
+    <!--_________________________start of  auto slider page banner____________________________-->
     <div class="car-page-banner">
       <h2>Choose your Desired Car Model</h2>
       <span class="car-line"><i class="fad fa-car"></i></span>
@@ -337,9 +346,10 @@
       </div>
 
     </div>
-    <!--end of a auto slider page banner  -->
+    <!--_____________________________end of a auto slider page banner__________________________-->
 
-    <!-- our happy clients stock and offices  -->
+
+    <!--______________________________strat of our happy clients stock and offices______________-->
     <div class="happy-serivices">
       <div class="clients-bgimg"></div>
 
@@ -362,574 +372,708 @@
       </div>
 
     </div>
-    <!-- endour happy clients stock and offices  -->
+    <!--________________________end of our happy clients stock and offices______________-->
 
-    <!-- different car model for clients  -->
+    <!--_________________________start of different car model for clients__________________-->
     <div class="select-car-model">
       <h2>Choose Your Car </h2>
       <span class="car-line"><i class="fad fa-car"></i></span>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 ">
+      <div class="car-model-container">
 
-            <nav>
-              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab"
+              aria-controls="nav-all" aria-selected="true">All</a>
 
-                <a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#all-model" role="tab"
-                  aria-controls="nav-all" aria-selected="true">All</a>
+            <a class="nav-item nav-link" id="nav-audi-tab" data-toggle="tab" href="#nav-audi" role="tab"
+              aria-controls="nav-audi" aria-selected="false">Audi</a>
 
-                <a class="nav-item nav-link" id="nav-audi-tab" data-toggle="tab" href="#audi" role="tab"
-                  aria-controls="nav-audi" aria-selected="false">Audi</a>
+            <a class="nav-item nav-link" id="nav-bmw-tab" data-toggle="tab" href="#nav-bmw" role="tab"
+              aria-controls="nav-bmw" aria-selected="false">BMW</a>
 
-                <a class="nav-item nav-link" id="nav-bmw-tab" data-toggle="tab" href="#bmw" role="tab"
-                  aria-controls="nav-bmw" aria-selected="false">BMW</a>
+            <a class="nav-item nav-link" id="nav-ferrari-tab" data-toggle="tab" href="#nav-ferrari" role="tab"
+              aria-controls="nav-ferrari" aria-selected="false">Ferrari</a>
 
-                <a class="nav-item nav-link" id="nav-ferrari-tab" data-toggle="tab" href="#ferrari" role="tab"
-                  aria-controls="nav-ferrari" aria-selected="false">Ferrari</a>
-
-                <a class="nav-item nav-link" id="nav-toyota-tab" data-toggle="tab" href="#toyota" role="tab"
-                  aria-controls="nav-toyota" aria-selected="false">Toyota</a>
-
-              </div>
-            </nav>
-
-            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="all-model" role="tabpanel" aria-labelledby="nav-all-tab">
-
-                <!-- audi box model with three car  -->
-                <div class="audi-box">
-
-                  <!--audi car model box 1  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/audi-model-box1.jpg" alt="audi-tt">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Audi TT</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 999/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2017</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of audi car model box 1  -->
-
-                  <!-- audi car model box 2  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/audi-model-box2.jpg" alt="audi-r8">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Audi R8</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 899/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2015</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of audi car model box 2  -->
-
-                  <!-- audi car model box 3  -->
-                  <div class="car-model-box">
-                    <img src="./images/audi-model-box3.jpg" alt="audi-a8">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Audi A8</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 799/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2010</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of audi car model box 3  -->
-                </div>
-                <!--end of audi box model with three car  -->
-
-
-                <!-- bmw box model with three car  -->
-                <div class="bmw-box">
-
-                  <!-- bmw car model box 1  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/bmw-model-box1.jpg" alt="bmw-g22-4">
-
-                    <span class="carname-price">
-                      <a href="rental.html">BMW G22 4</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 1299/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2020</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of bmw car model box 1  -->
-
-                  <!-- bmw car model box 2  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/bmw-model-box2.jpg" alt="bmw-f44-2">
-
-                    <span class="carname-price">
-                      <a href="rental.html">BMW F44 2</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 1199/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2019</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of bmw car model box 2  -->
-
-                  <!-- bmw car model box 3  -->
-                  <div class="car-model-box">
-                    <img src="./images/bmw-model-box3.jpg" alt="bmw-g15 8">
-
-                    <span class="carname-price">
-                      <a href="rental.html">BMW G15 8</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 999/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2018</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of bmw car model box 3  -->
-                </div>
-                <!--end of bmw box model with three car  -->
-
-                <!-- ferrari box model with three car  -->
-                <div class="ferrari-box">
-
-                  <!-- ferrari model box 1  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/ferrari-model-box1.jpg" alt="ferrari-599">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Ferrari 599</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 1999/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2013</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of ferrari model box 1  -->
-
-                  <!-- ferrari model box 2  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/ferrari-model-box2.jpg" alt="ferrari-ff">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Ferrari FF</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 1699/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2011</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of ferrari model box 2  -->
-
-                  <!-- ferrari model box 3  -->
-                  <div class="car-model-box">
-                    <img src="./images/ferrari-model-box3.jpg" alt="ferrari-f430">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Ferrari F430</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 1499/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2009</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of ferrari model box 3  -->
-                </div>
-                <!-- end of ferrari model box with three car  -->
-
-                <!-- toyota model box with three car  -->
-                <div class="toyota-box">
-
-                  <!-- toyota model box 1  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/toyota-model-box1.jpg" alt="toyota-mirari">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Toyota Mirai</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 899/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2020</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of toyota model box 1  -->
-
-                  <!-- toyota model box 2  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/toyota-model-box2.jpg" alt="toyota-prius">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Toyota Prius</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 799/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2016</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of toyota model box 2  -->
-
-                  <!-- toyota model box 3  -->
-                  <div class="car-model-box">
-                    <img src="./images/toyota-model-box3.jpg" alt="toyota-spade">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Toyota Spade</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 699/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2012</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of toyota model box 3  -->
-                </div>
-                <!-- end of toyota model box with three car  -->
-
-              </div>
-              <!-- car model box for display all cars  -->
-
-
-              <!-- audi panel tab  -->
-              <div class="tab-pane fade" id="audi" role="tabpanel" aria-labelledby="nav-audi-tab">
-
-                <!-- audi box model with three car  -->
-                <div class="audi-box">
-
-                  <!--audi car model box 1  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/audi-model-box1.jpg" alt="audi-tt">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Audi TT</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 999/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2017</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of audi car model box 1  -->
-
-                  <!-- audi car model box 2  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/audi-model-box2.jpg" alt="audi-r8">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Audi R8</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 899/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2015</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of audi car model box 2  -->
-
-                  <!-- audi car model box 3  -->
-                  <div class="car-model-box">
-                    <img src="./images/audi-model-box3.jpg" alt="audi-a8">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Audi A8</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 799/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2010</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of audi car model box 3  -->
-                </div>
-                <!-- audi box model with three car  -->
-              </div>
-              <!-- end of audi tab panel   -->
-
-              <!-- BMw tab panel  -->
-              <div class="tab-pane fade" id="bmw" role="tabpanel" aria-labelledby="nav-bmw-tab">
-
-                <!-- bmw box model with three car  -->
-                <div class="bmw-box">
-
-                  <!-- bmw car model box 1  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/bmw-model-box1.jpg" alt="bmw-g22 4">
-
-                    <span class="carname-price">
-                      <a href="rental.html">BMW G22 4</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 1299/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2020</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of bmw car model box 1  -->
-
-                  <!-- bmw car model box 2  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/bmw-model-box2.jpg" alt="bmw-f44 2">
-
-                    <span class="carname-price">
-                      <a href="rental.html">BMW F44 2</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 1199/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2019</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of bmw car model box 2  -->
-
-                  <!-- bmw car model box 3  -->
-                  <div class="car-model-box">
-                    <img src="./images/bmw-model-box3.jpg" alt="bmw g15 8">
-
-                    <span class="carname-price">
-                      <a href="rental.html">BMW G15 8</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 999/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2018</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of bmw car model box 3  -->
-                </div>
-                <!--end of bmw box model with three car  -->
-              </div>
-              <!-- end of bmw tab panel  -->
-
-
-              <!-- ferrari tab panel  -->
-              <div class="tab-pane fade" id="ferrari" role="tabpanel" aria-labelledby="nav-ferrari-tab">
-
-                <!-- ferrari box model with three car  -->
-                <div class="ferrari-box">
-
-                  <!-- ferrari model box 1  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/ferrari-model-box1.jpg" alt="ferrari-599">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Ferrari 599</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 1999/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2013</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of ferrari model box 1  -->
-
-                  <!-- ferrari model box 2  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/ferrari-model-box2.jpg" alt="ferrari-ff">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Ferrari FF</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 1699/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2011</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of ferrari model box 2  -->
-
-                  <!-- ferrari model box 3  -->
-                  <div class="car-model-box">
-                    <img src="./images/ferrari-model-box3.jpg" alt="ferrari-f430">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Ferrari F430</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 1499/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2009</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of ferrari model box 3  -->
-                </div>
-                <!-- end of ferrari model box with three car  -->
-              </div>
-              <!-- end of ferrari tab panel  -->
-
-              <!-- toyota tab panel  -->
-              <div class="tab-pane fade" id="toyota" role="tabpanel" aria-labelledby="nav-toyota-tab">
-
-                <!-- toyota model box with three car  -->
-                <div class="toyota-box">
-
-                  <!-- toyota model box 1  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/toyota-model-box1.jpg" alt="toyota-mirari">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Toyota Mirai</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 899/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2020</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of toyota model box 1  -->
-
-                  <!-- toyota model box 2  -->
-                  <div class="car-model-box" style="margin-right: 29px;">
-                    <img src="./images/toyota-model-box2.jpg" alt="toyota-prius">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Toyota Prius</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 799/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2016</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of toyota model box 2  -->
-
-                  <!-- toyota model box 3  -->
-                  <div class="car-model-box">
-                    <img src="./images/toyota-model-box3.jpg" alt="toyota-spade">
-
-                    <span class="carname-price">
-                      <a href="rental.html">Toyota Spade</a>
-                      <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i> 699/day</h6>
-                    </span>
-
-                    <p>HATCHBACK</p>
-
-                    <span class="model-links">
-                      <a href="#">2012</a>
-                      <a href="#">Manual</a>
-                      <a href="#">Air Condition</a>
-                    </span>
-                  </div>
-                  <!-- end of toyota model box 3  -->
-                </div>
-                <!-- end of toyota model box with three car  -->
-              </div>
-              <!-- end of toyota tab panel  -->
-
-            </div>
+            <a class="nav-item nav-link" id="nav-toyota-tab" data-toggle="tab" href="#nav-toyota" role="tab"
+              aria-controls="nav-toyota" aria-selected="false">Toyota</a>
 
           </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+
+            <!-- audi box model with three car  -->
+            <div class="audi-box">
+
+              <!--audi car model box 1  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/audi-model-box1.jpg" alt="audi-tt" />
+                  <a href="./images/audi-model-box1.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Audi TT</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    999/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2017</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of audi car model box 1  -->
+
+              <!-- audi car model box 2  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/audi-model-box2.jpg" alt="audi-r8">
+                  <a href="./images/audi-model-box2.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Audi R8</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    899/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2015</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of audi car model box 2  -->
+
+              <!-- audi car model box 3  -->
+              <div class="car-model-box">
+                <figure>
+                  <img src="./images/audi-model-box3.jpg" alt="audi-a8">
+                  <a href="./images/audi-model-box3.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Audi A8</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    799/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2010</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of audi car model box 3  -->
+            </div>
+            <!--end of audi box model with three car  -->
+
+            <!-- bmw box model with three car  -->
+            <div class="bmw-box">
+
+              <!-- bmw car model box 1  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/bmw-model-box1.jpg" alt="bmw-g22-4">
+                  <a href="./images/bmw-model-box1.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">BMW G22 4</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    1299/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2020</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of bmw car model box 1  -->
+
+              <!-- bmw car model box 2  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/bmw-model-box2.jpg" alt="bmw-f44-2">
+                  <a href="./images/bmw-model-box2.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">BMW F44 2</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    1199/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2019</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of bmw car model box 2  -->
+
+              <!-- bmw car model box 3  -->
+              <div class="car-model-box">
+                <figure>
+                  <img src="./images/bmw-model-box3.jpg" alt="bmw-g15 8">
+                  <a href="./images/bmw-model-box3.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">BMW G15 8</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    999/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2018</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of bmw car model box 3  -->
+            </div>
+            <!--end of bmw box model with three car  -->
+
+            <!-- ferrari box model with three car  -->
+            <div class="ferrari-box">
+
+              <!-- ferrari model box 1  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/ferrari-model-box1.jpg" alt="ferrari-599">
+                  <a href="./images/ferrari-model-box1.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Ferrari 599</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    1999/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2013</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of ferrari model box 1  -->
+
+              <!-- ferrari model box 2  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/ferrari-model-box2.jpg" alt="ferrari-ff">
+                  <a href="./images/ferrari-model-box2.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Ferrari FF</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    1699/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2011</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of ferrari model box 2  -->
+
+              <!-- ferrari model box 3  -->
+              <div class="car-model-box">
+                <figure>
+                  <img src="./images/ferrari-model-box3.jpg" alt="ferrari-f430">
+                  <a href="./images/ferrari-model-box3.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Ferrari F430</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    1499/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2009</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of ferrari model box 3  -->
+            </div>
+            <!-- end of ferrari model box with three car  -->
+
+            <!-- toyota model box with three car  -->
+            <div class="toyota-box">
+
+              <!-- toyota model box 1  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/toyota-model-box1.jpg" alt="toyota-mirari">
+                  <a href="./images/toyota-model-box1.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Toyota Mirai</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    899/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2020</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of toyota model box 1  -->
+
+              <!-- toyota model box 2  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/toyota-model-box2.jpg" alt="toyota-prius">
+                  <a href="./images/toyota-model-box2.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Toyota Prius</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    799/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2016</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of toyota model box 2  -->
+
+              <!-- toyota model box 3  -->
+              <div class="car-model-box">
+                <figure>
+                  <img src="./images/toyota-model-box3.jpg" alt="toyota-spade">
+                  <a href="./images/toyota-model-box3.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Toyota Spade</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    699/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2012</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of toyota model box 3  -->
+            </div>
+            <!-- end of toyota model box with three car  -->
+          </div>
+          <!-- end of display all car panel tab -->
+
+          <!-- start of audi panel tab  -->
+          <div class="tab-pane fade" id="nav-audi" role="tabpanel" aria-labelledby="nav-audi-tab">
+
+            <!-- audi box model with three car  -->
+            <div class="audi-box">
+
+              <!--audi car model box 1  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/audi-model-box1.jpg" alt="audi-tt">
+                  <a href="./images/audi-model-box1.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Audi TT</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    999/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2017</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of audi car model box 1  -->
+
+              <!-- audi car model box 2  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/audi-model-box2.jpg" alt="audi-r8">
+                  <a href="./images/audi-model-box2.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Audi R8</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    899/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2015</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of audi car model box 2  -->
+
+              <!-- audi car model box 3  -->
+              <div class="car-model-box">
+                <figure>
+                  <img src="./images/audi-model-box3.jpg" alt="audi-a8">
+                  <a href="./images/audi-model-box3.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Audi A8</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    799/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2010</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of audi car model box 3  -->
+            </div>
+            <!-- audi box model with three car  -->
+
+          </div>
+          <!-- end of audi tab panel -->
+
+          <!-- start of bmw tab panel -->
+          <div class="tab-pane fade" id="nav-bmw" role="tabpanel" aria-labelledby="nav-bmw-tab">
+
+            <!-- bmw box model with three car  -->
+            <div class="bmw-box">
+
+              <!-- bmw car model box 1  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/bmw-model-box1.jpg" alt="bmw-g22 4">
+                  <a href="./images/bmw-model-box1.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">BMW G22 4</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    1299/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2020</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of bmw car model box 1  -->
+
+              <!-- bmw car model box 2  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/bmw-model-box2.jpg" alt="bmw-f44 2">
+                  <a href="./images/bmw-model-box2.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">BMW F44 2</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    1199/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2019</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of bmw car model box 2  -->
+
+              <!-- bmw car model box 3  -->
+              <div class="car-model-box">
+                <figure>
+                  <img src="./images/bmw-model-box3.jpg" alt="bmw g15 8">
+                  <a href="./images/bmw-model-box3.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">BMW G15 8</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    999/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2018</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of bmw car model box 3  -->
+            </div>
+            <!--end of bmw box model with three car  -->
+
+          </div>
+          <!-- end of bmw tab panel -->
+
+          <!-- start of ferrari tab panel -->
+          <div class="tab-pane fade" id="nav-ferrari" role="tabpanel" aria-labelledby="nav-ferrari-tab">
+
+            <!-- ferrari box model with three car  -->
+            <div class="ferrari-box">
+
+              <!-- ferrari model box 1  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/ferrari-model-box1.jpg" alt="ferrari-599">
+                  <a href="./images/ferrari-model-box1.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Ferrari 599</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    1999/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2013</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of ferrari model box 1  -->
+
+              <!-- ferrari model box 2  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/ferrari-model-box2.jpg" alt="ferrari-ff">
+                  <a href="./images/ferrari-model-box2.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Ferrari FF</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    1699/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2011</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of ferrari model box 2  -->
+
+              <!-- ferrari model box 3  -->
+              <div class="car-model-box">
+                <figure>
+                  <img src="./images/ferrari-model-box3.jpg" alt="ferrari-f430">
+                  <a href="./images/ferrari-model-box3.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Ferrari F430</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    1499/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2009</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of ferrari model box 3  -->
+            </div>
+            <!-- end of ferrari model box with three car  -->
+
+          </div>
+          <!-- end of ferrari tab panel -->
+
+          <!-- start of toyota tab panel -->
+          <div class="tab-pane fade" id="nav-toyota" role="tabpanel" aria-labelledby="nav-toyota-tab">
+
+            <!-- toyota model box with three car  -->
+            <div class="toyota-box">
+
+              <!-- toyota model box 1  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/toyota-model-box1.jpg" alt="toyota-mirari">
+                  <a href="./images/toyota-model-box1.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Toyota Mirai</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    899/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2020</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of toyota model box 1  -->
+
+              <!-- toyota model box 2  -->
+              <div class="car-model-box" style="margin-right: 29px;">
+                <figure>
+                  <img src="./images/toyota-model-box2.jpg" alt="toyota-prius">
+                  <a href="./images/toyota-model-box2.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Toyota Prius</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    799/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2016</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of toyota model box 2  -->
+
+              <!-- toyota model box 3  -->
+              <div class="car-model-box">
+                <figure>
+                  <img src="./images/toyota-model-box3.jpg" alt="toyota-spade">
+                  <a href="./images/toyota-model-box3.jpg">
+                    <figcaption><i class="far fa-search-plus"></i></figcaption>
+                  </a>
+                </figure>
+
+                <span class="carname-price">
+                  <a href="rental.html">Toyota Spade</a>
+                  <h6><i class="fas fa-tag"></i>&nbsp <i class="far fa-rupee-sign"></i>
+                    699/day</h6>
+                </span>
+
+                <p>HATCHBACK</p>
+
+                <span class="model-links">
+                  <a href="#">2012</a>
+                  <a href="#">Manual</a>
+                  <a href="#">Air Condition</a>
+                </span>
+              </div>
+              <!-- end of toyota model box 3  -->
+            </div>
+            <!-- end of toyota model box with three car  -->
+          </div>
+          <!-- end of of toyota tab panel -->
 
         </div>
       </div>
     </div>
 
-    <!--end of different car model for clients -->
-
-    <!-- our price for monthly pack customer   -->
+    <!--_______________________start of our price for monthly pack customer_______________________________-->
     <div class="monthly-pack">
       <div class="monthly-pack-bgimg"></div>
       <h2>only quality for clients</h2>
@@ -952,6 +1096,8 @@
           <p>ALL INCLUSIVE MINI BAR</p>
           <hr>
           <p>CHAUFFER INCLUDED IN PRICE</p>
+          <hr>
+          <button>GET STARTED</button>
         </div>
 
         <div class="price-box">
@@ -970,6 +1116,8 @@
           <p>ALL INCLUSIVE MINI BAR</p>
           <hr>
           <p>CHAUFFER INCLUDED IN PRICE</p>
+          <hr>
+          <button>GET STARTED</button>
         </div>
 
         <div class="price-box">
@@ -988,13 +1136,16 @@
           <p>ALL INCLUSIVE MINI BAR</p>
           <hr>
           <p>CHAUFFER INCLUDED IN PRICE</p>
+          <hr>
+          <button>GET STARTED</button>
         </div>
+
       </div>
-
     </div>
-    <!--end of our price for monthly pack customer  -->
+    <!--_________________end of our price for monthly pack customer_________________________-->
 
-    <!-- testimonials   -->
+
+    <!--____________________________start of testimonials_____________________________________-->
     <div class="testimonials">
       <h2>Some Features That Made Us Unique</h2>
       <span class="car-line"><i class="fad fa-car"></i></span>
@@ -1004,9 +1155,10 @@
 
         <div class="mySlides">
           <div class="testimonial-box">
-            <img src="./images/smith.jpg" alt="Smith">
+            <img src="./images/car-reviewer1.jpg" alt="Smith">
             <div class="review">
-              <p>Great journey with you, what a fantastic service provided by dummy car, I am extremly satisfied. Hope
+              <p>Great journey with you, what a fantastic service provided by dummy car, I am extremly satisfied.
+                Hope
                 we meet again.</p>
               <span class="Icon-with-name">
                 <h5>SMITH ADS</h5>
@@ -1020,7 +1172,7 @@
 
         <div class="mySlides">
           <div class="testimonial-box">
-            <img src="./images/atex.jpg" alt="Diptarko">
+            <img src="./images/car-reveiwer2.jpg" alt="Diptarko">
 
             <div class="review">
               <p>At the outset, let me thank you for introducing dummycar in Bhubaneswar. Your customer support was
@@ -1039,7 +1191,7 @@
         <div class="mySlides">
 
           <div class="testimonial-box">
-            <img src="./images/tuni.jpg" alt="Tuni">
+            <img src="./images/car-reviewer3.jpg" alt="Tuni">
 
             <div class="review">
               <p>It was great pleasure use your service, As all process being online it was really hassle free
@@ -1099,6 +1251,7 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
+
       /* automatic js */
       var slideIndex = 0;
       carousel();
@@ -1123,24 +1276,27 @@
         setTimeout(carousel, 4000);
       }
     </script>
-    <!--end of testimonials  -->
+    <!--__________________________end of testimonials_________________________________-->
 
-    <!-- support teams  -->
+    <!--___________________________start of support teams_____________________________-->
     <div class="support-team">
       <div class="support-bgimg"></div>
       <div class="inner-support">
         <h2>Experience Great Support</h2>
         <span class="car-line"><i class="fad fa-car"></i></span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestias exercitationem architecto culpa
-          nobis necessitatibus, soluta veniam deserunt modi blanditiis dignissimos vero distinctio quidem consequatur
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestias exercitationem architecto
+          culpa
+          nobis necessitatibus, soluta veniam deserunt modi blanditiis dignissimos vero distinctio quidem
+          consequatur
           voluptatum impedit alias expedita amet. Et enim saepe dolorum voluptatibus possimus, similique distinctio
           sapiente.</p>
         <button type="submit">REACH OUR SUPPORT TEAM</button>
       </div>
     </div>
-    <!--end of support team  -->
+    <!--_________________________________end of support team_______________________________-->
 
-    <!-- our blog   -->
+
+    <!--________________________________start of our blog___________________________________-->
     <div class="car-blog">
       <h2>Latest From Our Blog</h2>
       <span class="car-line"><i class="fad fa-car"></i></span>
@@ -1148,18 +1304,22 @@
       <div class="blog-box">
 
         <div class="blog-content">
-          <img src="./images/car-blog1.jpg" alt="blog1 image">
+          <figure>
+            <img src="./images/car-blog1.jpg" alt="blog1 image">
+          </figure>
           <h6>10 JAN 2020</h6>
           <a href="rental.html">
             <h3>A Beautiful View of our ever green Botanical Garden</h3>
           </a>
-          <p>Explore the beauty of Nandankanan Zoo and botanical garden with us.</p>
+          <p>Explore the beauty of Nandankanan Zoo and botanical garden.</p>
           <span class="likes"><i class="fal fa-heart"></i> 15 Likes </span>
           <span class="comments"><i class="fal fa-comment"></i> 02 Comments </span>
         </div>
 
         <div class="blog-content">
-          <img src="./images/car-blog2.jpg" alt="blog2 image">
+          <figure>
+            <img src="./images/car-blog2.jpg" alt="blog2 image">
+          </figure>
           <h6>12 JAN 2020</h6>
           <a href="rental.html">
             <h3>A Fantastic blog of our city Highways</h3>
@@ -1170,7 +1330,9 @@
         </div>
 
         <div class="blog-content">
-          <img src="./images/car-blog3.jpg" alt="blog3 image">
+          <figure>
+            <img src="./images/car-blog3.jpg" alt="blog3 image">
+          </figure>
           <h6>20 JAN 2020</h6>
           <a href="rental.html">
             <h3>Discover the beauty of our latest cars</h3>
@@ -1181,7 +1343,9 @@
         </div>
 
         <div class="blog-content">
-          <img src="./images/car-blog4.jpg" alt="blog1 image">
+          <figure>
+            <img src="./images/car-blog4.jpg" alt="blog1 image">
+          </figure>
           <h6>02 FEB 2020</h6>
           <a href="rental.html">
             <h3>Take a look at our garage how it looks </h3>
@@ -1194,9 +1358,9 @@
       </div>
 
     </div>
-    <!--end of our blog  -->
+    <!--___________________________end of our blog______________________________-->
 
-    <!-- footer sectio of car rentak page  -->
+    <!--___________________________footer sectio of car rental page_______________-->
     <footer class="rental-footer">
 
       <div class="getin-touch">
@@ -1220,14 +1384,18 @@
       <div class="news-letter">
         <h2>Newsletter</h2>
         <p>Stay update with our latest Offers</p>
-        <input type="text" placeholder="Enter Email">
-        <button><i class="far fa-arrow-right"></i></button>
+        <form onSubmit="alert('Thank you for Subscibe us.\nYou will get notified for every offer.');">
+          <input type="text" placeholder="Enter Email" required>
+          <button><i class="far fa-arrow-right"></i></button>
+        </form>
       </div>
 
       <p class="rental-copyright">Copyright &copy; All rights reserved </p>
     </footer>
-    <!--end  footer sectio of car rentak page  -->
+    <!--_____________________end  footer sectio of car rentak page________________________________-->
   </div>
+
+
   <!-- my preloader java script -->
   <script>
     var preloader = document.getElementById('car-loader');
@@ -1235,13 +1403,6 @@
     function loadingfunction() {
       preloader.style.display = 'none';
     };
-  </script>
-
-  <!-- after submitting car booking form  -->
-  <script>
-    function carbooking() {
-      alert("Thank you form booking with us.\nYou will got a confirmation message with all details.");
-    }
   </script>
 
   <!-- bootstrap  -->

@@ -48,8 +48,11 @@
 }
 
 .navicon {
-  float: left;
-  padding: 14px 10px 0px 12px;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-height: 450px) {

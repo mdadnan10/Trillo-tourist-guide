@@ -10,7 +10,8 @@ $headingtext: 25px;
 }
 
 .trendingbox {
-	padding: 15px 50px 0 50px;
+	width: 92%;
+	margin: 55px auto;
 
 	& .trendingheading {
 		/* import from top of this page */
@@ -47,8 +48,9 @@ $headingtext: 25px;
 }
 
 .main-slider {
+	width: 100%;
 	height: 300px;
-	margin: 20px 50px 15px 50px;
+	margin: 20px 0;
 
 	& .slider-img-main {
 		height: 291px;
@@ -118,15 +120,18 @@ $headingtext: 25px;
 /*----------auto slider page banner------*/
 .page-banner {
 	position: relative;
-	margin: 40px 50px 10px 50px;
-	height: 280px;
+	width: 92%;
+	height: 256px;
+	margin: 4% auto;
 
 	& .page-banner-slide {
 		width: 100%;
+		height: 100%;
 
 		& a {
 			& img {
 				width: 100%;
+				height: 100%;
 				border-radius: 4px;
 			}
 		}
@@ -142,6 +147,7 @@ $headingtext: 25px;
 			@include autoslidernavigationicon;
 			right: 20px;
 		}
+
 		button {
 			outline: none;
 		}
@@ -153,20 +159,22 @@ $headingtext: 25px;
 }
 
 #button-angle-left {
+	position: absolute;
 	top: 6px;
 	right: 12px;
-	position: absolute;
 }
 
 #button-angle-right {
+	position: absolute;
 	top: 6px;
 	right: 10px;
-	position: absolute;
 }
 
 /*---------reading post ------*/
 .readingcorner {
-	padding: 30px 30px 110px 50px;
+	height: 350px;
+	width: 92%;
+	margin: 4% auto;
 
 	& .readingtext {
 		/* import from variables.scss */
@@ -177,13 +185,13 @@ $headingtext: 25px;
 }
 
 .inlinereading {
-	display: flex;
 	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
 
 	& .readingpost {
 		height: 220px;
-		width: 380px;
-		margin-right: 20px;
+		width: 31%;
 
 		& a {
 			text-decoration: none;
@@ -220,8 +228,9 @@ $headingtext: 25px;
 
 /*---------why we all divs------*/
 .whywe {
-	margin: 10px 50px 52px 50px;
+	width: 92%;
 	height: 350px;
+	margin: 4% auto;
 
 	& .whywe-heading {
 		/* import from variables.scss */
@@ -234,7 +243,8 @@ $headingtext: 25px;
 
 .whywe-box {
 	display: flex;
-     justify-content: space-between;
+	justify-content: space-between;
+
 	& .whywe-inner-box {
 		width: 17%;
 		text-align: center;
@@ -305,12 +315,12 @@ $headingtext: 25px;
 
 /*-----contact form -------*/
 .contactform {
-	margin: 20px 50px 61px 50px;
-	background: black;
 	position: relative;
+	width: 92%;
 	height: 300px;
-	display: flex;
+	margin: 2% auto;
 	border-radius: 4px;
+	background: black;
 
 	& img {
 		width: 100%;
@@ -319,66 +329,73 @@ $headingtext: 25px;
 		border-radius: 4px;
 	}
 
-	& .planwithus {
-		/* import from variables.scss */
-		color: $fcolor;
-		width: 70%;
+	& .ineer-contact-form {
 		position: absolute;
-		font-size: 28px;
-		font-weight: bold;
-		padding: 4.5rem;
-	}
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
 
-	& .start {
-		border-top: 2px solid $fcolor;
-	}
-
-	& .yourdetails {
-		font-size: 35px;
-	}
-
-	& .end {
-		border-bottom: 2px solid $fcolor;
-	}
-}
-
-
-.submitform {
-	position: absolute;
-	right: 13px;
-	width: 28%;
-	padding: 20px;
-
-	& .textfield {
-		height: 33px;
-		margin-bottom: 15px;
-		/* import from variables.scss */
-		color: $textcolor;
-		font-size: $size15;
-	}
-
-	& .checkbox {
-		/* import from variables.scss */
-		color: $fcolor;
-		font-size: $size12;
-
-		& a {
+		& .planwithus {
 			/* import from variables.scss */
 			color: $fcolor;
+			width: 60%;
+			height: 53%;
+			font-size: 28px;
+			font-weight: bold;
 		}
 
-		& a:hover {
+		& .start {
+			border-top: 2px solid $fcolor;
+		}
+
+		& .yourdetails {
+			font-size: 35px;
+		}
+
+		& .end {
+			border-bottom: 2px solid $fcolor;
+		}
+	}
+
+
+	.submitform {
+		width: 30%;
+
+		& .textfield {
+			height: 33px;
+			margin-bottom: 15px;
 			/* import from variables.scss */
-			color: $buttonscolor;
+			color: $textcolor;
+			font-size: $size15;
+		}
+
+		& .checkbox {
+			/* import from variables.scss */
+			color: $fcolor;
+			font-size: $size12;
+
+			& a {
+				/* import from variables.scss */
+				color: $fcolor;
+			}
+
+			& a:hover {
+				/* import from variables.scss */
+				color: $buttonscolor;
+			}
 		}
 	}
 }
 
 #contactbtn {
-	height: 34px;
 	width: 120px;
-	padding-top: 4.5px;
 	margin-top: 13px;
+	height: 34px;
+	padding-top: 4.5px;
 	/* import from variables.scss */
 	color: $fcolor;
 	font-size: $size15;
@@ -386,6 +403,7 @@ $headingtext: 25px;
 	background: linear-gradient(to right, #f85032, #e73827);
 	border-radius: 20px;
 	outline: none;
+
 	&:hover {
 		background: linear-gradient(to left, #f85032, #e73827);
 	}

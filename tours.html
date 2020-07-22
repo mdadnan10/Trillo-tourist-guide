@@ -45,13 +45,13 @@
 
     /*---------slide show---------*/
     .carousel {
-    top: -5px;
+      top: -5px;
     }
 
     .carousel-control-next-icon,
     .carousel-control-prev-icon {
-    height: 30px;
-    width: 30px;
+      height: 30px;
+      width: 30px;
     }
 
     /*---------end slide show---------*/
@@ -66,26 +66,34 @@
   <!--_________________________start of navbar___________________________-->
   <nav>
     <span class="navicon" style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
 
-    <!--_________________________search bar___________________________-->
+    <div class="navbar-conatiner">
+      <div class="logo-box">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+      </div>
 
-    <div class="search">
-      <form class="searchbox">
-        <input id="input" class="form-control" type="search" placeholder="Search destinations">
-        <a href="#"><i id="search" class="fas fa-search"></i></a>
-      </form>
+      <!--_________________________search bar___________________________-->
+
+      <div class="search">
+        <form class="searchbox">
+          <input class="form-control" type="search" placeholder="Search hotels">
+          <a href="#"><i class="fas fa-search"></i></a>
+        </form>
+      </div>
+      <!--_________________________end search bar___________________________-->
+
+      <!--_________________________navbar links___________________________-->
+      <div class="profile-noti">
+        <ul>
+          <li><a href="#"><i class="fas fa-bookmark"></i><span class="notification">7</span></a></li>
+          <li><a href="#"><i class="fas fa-comments-alt"></i><span class="notification">13</span></a></li>
+          <li><a href="#" style="text-decoration: none;"><img id="profile-img" src="images/profile.png"
+                alt="profile">&nbsp
+              Jonas</a></li>
+        </ul>
+      </div>
+
     </div>
-    <!--_________________________search bar___________________________-->
-
-    <!--_________________________navbar links___________________________-->
-
-    <ul>
-      <li><a href="#"><i id="bookmark" class="fas fa-bookmark"></i><span class="notification">7</span></a></li>
-      <li><a href="#"><i id="message" class="fas fa-comments-alt"></i><span class="notification">13</span></a></li>
-      <li><a href="#" style="text-decoration: none;"><img id="profile" src="images/profile.png" alt="profile">&nbsp
-          Jonas</a></li>
-    </ul>
   </nav>
   <!--_________________________end of navbar___________________________-->
 
@@ -103,7 +111,7 @@
 
   <div id="main">
 
-
+    <!--_________________________start of home page carousel_________________________-->
     <div class="image-slider">
       <div class="carousel slide" data-ride="carousel" data-interval="3000" id="web">
         <div class="carousel-inner">
@@ -125,13 +133,15 @@
             class="carousel-control-next-icon"></span></a>
         <a href="#web" class="carousel-control-prev" data-slide="prev"><span
             class="carousel-control-prev-icon"></span></a>
-
       </div>
-    </div>
 
-    <!--------trending box for international-->
-    <div class="trendingbox" style="padding-top: 20px;">
-      <div class="trendingheading">Trending International Destinations</div>
+    </div>
+    <!--_________________________end of home page carousel_________________________-->
+
+
+    <!--________________________start of trending box for international__________________-->
+    <div class="trendingbox">
+      <span class="trendingheading">Trending International Destinations</span>
       <div class="trendingtext">
         The world is now just a hop, skip and jump away and here’s how you can make your travel easier and better. <span
           id="dots">...</span><span id="more">Our various vacation packages, trip packages and holiday packages offer a
@@ -151,99 +161,97 @@
           must-see list of every traveller. This is just a small glimpse of our international tour packages. There is
           much more awaiting you.<br></span><button type="button" id="read" onclick="read()">Read more</button>
       </div>
-    </div>
-    <!--trending section for international-->
 
-    <!----sliders-->
-    <div class="main-slider">
-      <div class="owl-carousel owl-theme">
+      <!----sliders-->
+      <div class="main-slider">
+        <div class="owl-carousel owl-theme">
 
-        <!----slider box 1---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/USA-Trending-image.jpg" alt="america">
-              <div class="top-left">AMERICA</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                  1,5200,600/-</span></div>
-            </a>
+          <!----slider box 1---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/USA-Trending-image.jpg" alt="america">
+                <div class="top-left">AMERICA</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                    1,52,600/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 2---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/South-Africa-Trnd.jpg" alt="South africa">
-              <div class="top-left">SOUTH AFRICA</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                  1,35,000/-</span></div>
-            </a>
+          <!----slider box 2---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/South-Africa-Trnd.jpg" alt="South africa">
+                <div class="top-left">SOUTH AFRICA</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                    1,35,000/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 3---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Europe-Trending-image.jpg" alt="Europe">
-              <div class="top-left">EUROPE</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                  1,07,200/-</span></div>
-            </a>
+          <!----slider box 3---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Europe-Trending-image.jpg" alt="Europe">
+                <div class="top-left">EUROPE</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                    1,07,200/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 4---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Mauritius-new.jpg" alt="Mauritius">
-              <div class="top-left">MAURITIUS</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                  68,000/-</span></div>
-            </a>
+          <!----slider box 4---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Mauritius-new.jpg" alt="Mauritius">
+                <div class="top-left">MAURITIUS</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                    68,000/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 5---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Jordan.jpg" alt="jordan">
-              <div class="top-left">JORDAN</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                  85,100/-</span></div>
-            </a>
+          <!----slider box 5---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Jordan.jpg" alt="jordan">
+                <div class="top-left">JORDAN</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                    85,100/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 6---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Great-Britain1.jpg" alt="Britain">
-              <div class="top-left">GREAT BRITAIN</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                  1,49,700/-</span></div>
-            </a>
+          <!----slider box 6---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Great-Britain1.jpg" alt="Britain">
+                <div class="top-left">GREAT BRITAIN</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                    1,49,700/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 7---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Egypt.jpg" alt="Egypt">
-              <div class="top-left">EGYPT</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                  98,270/-</span></div>
-            </a>
+          <!----slider box 7---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Egypt.jpg" alt="Egypt">
+                <div class="top-left">EGYPT</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                    98,270/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
-    <!--------end trending box for international-->
+    <!--_____________________________end trending box for international___________________________-->
 
-    <br>
 
-    <!--------trending box for indian-->
+    <!--____________________________start of trending box for indian___________________________________-->
     <div class="trendingbox">
-      <div class="trendingheading">Trending Indian Destinations</div>
+      <span class="trendingheading">Trending Indian Destinations</span>
       <div class="trendingtext">
         India’s diverse topography, history and culture offers enough experiences to fulfil any type of wanderlust.
         <span id="indiandots">...</span><span id="indianmore">So do our India tour packages which cover the length and
@@ -263,182 +271,175 @@
           Go through more of our holiday packages in India to find your next great tour across the
           country.<br></span><button type="button" id="indianread" onclick="indianread()">Read more</button>
       </div>
-    </div>
-    <!--trending section for indian-->
 
+      <!----sliders-->
+      <div class="main-slider">
+        <div class="owl-carousel owl-theme">
 
-    <!--trending section for india-->
-    <!----sliders-->
-    <div class="main-slider">
-      <div class="owl-carousel owl-theme">
-
-        <!----slider box 1---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Karnataka.jpg" alt="karnataka">
-              <div class="top-left">KARNATAKA</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                  6,399/-</span></div>
-            </a>
+          <!----slider box 1---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Karnataka.jpg" alt="karnataka">
+                <div class="top-left">KARNATAKA</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                    6,399/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 2---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Kolkata.jpg" alt="Kolkata">
-              <div class="top-left">KOLKATA</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                  4,860/-</span></div>
-            </a>
+          <!----slider box 2---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Kolkata.jpg" alt="Kolkata">
+                <div class="top-left">KOLKATA</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                    4,860/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 3---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Uttarakhand (1).jpg" alt="Uttarakhand">
-              <div class="top-left">UTTARAKHAND</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                  7,900/-</span></div>
-            </a>
+          <!----slider box 3---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Uttarakhand (1).jpg" alt="Uttarakhand">
+                <div class="top-left">UTTARAKHAND</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                    7,900/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 4---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Himachal.jpg" alt="Himachal">
-              <div class="top-left">HIMACHAL</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                  5,999/-</span></div>
-            </a>
+          <!----slider box 4---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Himachal.jpg" alt="Himachal">
+                <div class="top-left">HIMACHAL</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                    5,999/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 5---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Rajasthan (1).jpg" alt="Rajasthan">
-              <div class="top-left">RAJASTHAN</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                  2,999/-</span></div>
-            </a>
+          <!----slider box 5---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Rajasthan (1).jpg" alt="Rajasthan">
+                <div class="top-left">RAJASTHAN</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                    2,999/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 6---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Hyderabad.jpg" alt="Hyderabad">
-              <div class="top-left">HYDERABAD</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                  2,199/-</span></div>
-            </a>
+          <!----slider box 6---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Hyderabad.jpg" alt="Hyderabad">
+                <div class="top-left">HYDERABAD</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                    2,199/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 7---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Kashmir.jpg" alt="Kashmir">
-              <div class="top-left">KASHMIR</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                  5,999/-</span></div>
-            </a>
+          <!----slider box 7---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Kashmir.jpg" alt="Kashmir">
+                <div class="top-left">KASHMIR</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                    5,999/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
-    <!--------end trending box for india-->
+    <!--_________________________________end trending box for india__________________________________-->
 
-    <br>
 
-    <!--------trending box for our special-->
+    <!--________________________________start of trending box for our special________________________-->
     <div class="trendingbox">
-      <div class="trendingheading">Our Special Packages</div>
-    </div>
+      <span class="trendingheading">Our Special Packages</span>
 
-    <!--trending section for our special-->
+      <!----sliders-->
+      <div class="main-slider">
+        <div class="owl-carousel owl-theme">
 
-    <!----sliders-->
-    <div class="main-slider">
-      <div class="owl-carousel owl-theme">
-
-        <!----slider box 1---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Taj-Our-Special.jpg" alt="karnataka">
-              <div class="top-left">TAJ SPECIAL <br> TOUR </div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                  3,499/-</span></div>
-            </a>
+          <!----slider box 1---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Taj-Our-Special.jpg" alt="karnataka">
+                <div class="top-left">TAJ SPECIAL <br> TOUR </div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                    3,499/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 2---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Wellness-Our Special.jpg" alt="Kolkata">
-              <div class="top-left">WELLNESS <br> TOUR</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                  6,799/-</span></div>
-            </a>
+          <!----slider box 2---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Wellness-Our Special.jpg" alt="Kolkata">
+                <div class="top-left">WELLNESS <br> TOUR</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                    6,799/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 3---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Staycations-our-Special.jpg" alt="Uttarakhand">
-              <div class="top-left">STAYCATIONS <br> TOUR</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                  2,999/-</span></div>
-            </a>
+          <!----slider box 3---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Staycations-our-Special.jpg" alt="Uttarakhand">
+                <div class="top-left">STAYCATIONS <br> TOUR</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                    2,999/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 4---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Afforable-Luxury-our-special.jpg" alt="Himachal">
-              <div class="top-left">AFFORABLE <br> LUXURY TOUR</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                  3,499/-</span></div>
-            </a>
+          <!----slider box 4---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Afforable-Luxury-our-special.jpg" alt="Himachal">
+                <div class="top-left">AFFORABLE <br> LUXURY TOUR</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                    3,499/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 5---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Experiential-Stays-our-Special.jpg" alt="Rajasthan">
-              <div class="top-left">EXPERIENTIAL <br> STAYS TOUR</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                  8,999/-</span></div>
-            </a>
+          <!----slider box 5---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Experiential-Stays-our-Special.jpg" alt="Rajasthan">
+                <div class="top-left">EXPERIENTIAL <br> STAYS TOUR</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                    8,999/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!----slider box 6---->
-        <div class="item">
-          <div class="slider-img-main">
-            <a href="#"><img src="images/Romantic-Break-our-Special.jpg" alt="Hyderabad">
-              <div class="top-left">ROMANTIC <br> BREAK TOUR</div>
-              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                  13,900/-</span></div>
-            </a>
+          <!----slider box 6---->
+          <div class="item">
+            <div class="slider-img-main">
+              <a href="#"><img src="images/Romantic-Break-our-Special.jpg" alt="Hyderabad">
+                <div class="top-left">ROMANTIC <br> BREAK TOUR</div>
+                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                    13,900/-</span></div>
+              </a>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
-    <!--------end trending box for our special-->
+    <!--_________________________end trending box for our special_______________________-->
 
 
-    <!----page banner----->
-
+    <!--____________________________start of page banner_______________________________-->
     <div class="page-banner">
       <div class="page-banner-slide">
         <a href="#"><img class="mySlides" src="images/New-Zealand-North-Scroller-Banner.jpg" alt="newsland north"></a>
@@ -498,10 +499,10 @@
       }
     </script>
 
-    <!--------end page banner------->
+    <!--________________________________end page banner___________________________________-->
 
 
-    <!--------reading corner------->
+    <!--_______________________________start of reading corner___________________________-->
     <div class="readingcorner">
       <div class="readingtext">Reading Corner</div>
 
@@ -526,9 +527,10 @@
 
       </div>
     </div>
-    <!--------end reading corner------->
+    <!--______________________________________end reading corner___________________________________-->
 
 
+    <!--___________________________________start of why we conatiner_______________________________-->
     <div class="whywe">
       <div class="whywe-heading">Why We?</div>
 
@@ -571,30 +573,36 @@
 
       </div>
     </div>
-    <!------contact form------->
+    <!--___________________________________end of why we conatiner_______________________________-->
+
+
+    <!--___________________________________start of contact form__________________________________-->
     <div class="contactform">
       <img src="images/contact-image.jpg" alt="image">
-      <div class="planwithus">
-        <span class="start">PLAN</span> YOUR HOLIDAYS WITH OUR ASSISTANCE,<br>
-        <span class="yourdetails">JUST FILL IN YOUR DE<span class="end">TAILS.</span></span>
-      </div>
+      <div class="ineer-contact-form">
+        <div class="planwithus">
+          <span class="start">PLAN</span> YOUR HOLIDAYS WITH OUR ASSISTANCE,<br>
+          <span class="yourdetails">JUST FILL IN YOUR DE<span class="end">TAILS.</span></span>
+        </div>
 
-      <div class="submitform">
-        <form>
-          <input class="form-control textfield" type="text" name="name" placeholder="Name" required="required">
-          <input class="form-control textfield" type="text" name="mobile" placeholder="Mobile" required="required">
-          <input class="form-control textfield" type="email" name="email" placeholder="Email" required="required">
-          <span class="checkbox"><input type="checkbox"> I hereby accept the <U><a href="#">privacy policy </a></U>and
-            authorize blank and its representatives to contact me.</span>
-          <button id="contactbtn" class="btn btn-secondary btn-lg active" role="button"
-            aria-pressed="true">Submit</button>
-        </form>
+        <div class="submitform">
+          <form onSubmit="alert('Thank You For Resgistering. \nOne Of Our Executive Will Contact you Soon.');">
+            <input class="form-control textfield" type="text" name="name" placeholder="Name" required="required">
+            <input class="form-control textfield" type="text" name="mobile" placeholder="Mobile" required="required">
+            <input class="form-control textfield" type="email" name="email" placeholder="Email" required="required">
+            <div class="checkbox"><input type="checkbox"> I hereby accept the <U><a href="#">privacy policy </a></U>and
+              authorize blank and its representatives to contact me.</div>
+            <button id="contactbtn" class="btn btn-secondary btn-lg active" role="button"
+              aria-pressed="true">Submit</button>
+          </form>
+        </div>
       </div>
 
     </div>
-    <!------contact form------->
+    <!--______________________________contact form__________________________________-->
 
 
+    <!--___________________________start of footer section__________________________-->
     <footer class="toursfooter">
 
       <div class="footerrow">
@@ -610,8 +618,9 @@
         </div>
 
         <div class="subscribe">
-          <form>
-            <input type="text" class="form-control" name="subscribe" placeholder="Subscribe to our updates/offers">
+          <form onSubmit="alert('Thank you for Subscibe us. \nYou will get notified for every offer.');">
+            <input type="email" class="form-control" name="subscribe" placeholder="Subscribe to our updates/offers"
+              required>
             <button id="subsbtn" class="btn btn-secondary btn-lg active" role="button"
               aria-pressed="true">Submit</button>
           </form>
@@ -625,13 +634,12 @@
         <a href="#" class="fab fa-instagram sicon"></a>
         <a href="#" class="fab fa-linkedin-in sicon"></a>
         <a href="#"><i class="fab fa-twitter sicon"></i></a>
-
-
       </div>
 
       <div class="tourscopyright"> Copyright &copy; 2020 all rights reserved. </div>
 
     </footer>
+    <!--___________________________end of footer section__________________________-->
 
 
 

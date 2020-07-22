@@ -3,31 +3,18 @@
 $anglebackground: rgb(239, 239, 239) !important;
 $anglecolor: rgb(74, 74, 74);
 
-/* trending box of international and indian in tours.html */
-@mixin trendingboxesnavigationicon {
-     background-color: $anglebackground;
-     width: 33px;
-     height: 33px;
-     border-radius: 50px !important;
-     position: absolute;
-     top: 50%;
-     transform: translateY(-50%);
-     outline: none;
+/* flight booking button design */
+@mixin flightbutton {
+     background: linear-gradient(to right, #485563, #29323c);
+     width: 230px;
+
+     &:hover {
+          background: linear-gradient(to left, #485563, #29323c);
+     }
 }
 
-/* page banner in tours.html */
-@mixin autoslidernavigationicon {
-     background-color: $anglebackground;
-     font-size: 25px;
-     color: $anglecolor;
-     position: absolute;
-     top: 50%;
-     transform: translateY(-50%);
-     height: 33px;
-     width: 33px;
-     border: none;
-     border-radius: 50px !important;
-}
+/* end of flight booking button design */
+
 
 /* car rental button design */
 @mixin rentalbuttons {
@@ -49,32 +36,35 @@ $anglecolor: rgb(74, 74, 74);
 /* car line */
 @mixin carline {
      position: relative;
+     height: 25px;
+     width: 100%;
      display: flex;
+     align-items: center;
      justify-content: center;
 
      &::before {
           content: "";
           position: absolute;
           background-color: $b3color;
-          top: 18px;
-          left: 44%;
+          margin-right: 100px;
           height: 2px;
           width: 50px;
      }
 
      & .fa-car {
-          padding-top: 10px;
           /* import from top of rental.scss */
           color: $colormain;
+          position: absolute;
           font-size: 20px;
+          left: 50%;
+          transform: translateX(-50%);
      }
 
      &::after {
           content: "";
           position: absolute;
           background-color: $b3color;
-          top: 18px;
-          right: 44%;
+          margin-left: 100px;
           height: 2px;
           width: 50px;
      }
@@ -97,7 +87,7 @@ $anglecolor: rgb(74, 74, 74);
 
 /* end car form rental date dat */
 
-/* box and hover effect of services and reviewer section */
+/* box and hover effect of car services and reviewer section */
 @mixin box-content {
      display: flex;
      justify-content: space-between;
@@ -126,13 +116,13 @@ $anglecolor: rgb(74, 74, 74);
 
           &:hover {
                /* import from top of rental.scss */
-               box-shadow: 0 20px 20px #777;
+               box-shadow: 0 15px 20px rgba(169, 169, 177, 0.658);
                cursor: pointer;
           }
      }
 }
 
-/* end od box and hover effect of services and reviewer section */
+/* end od box and hover effect of car services and reviewer section */
 
 /* happy client section */
 @mixin happy-clients {
@@ -175,19 +165,66 @@ $anglecolor: rgb(74, 74, 74);
 /* different car model box design */
 @mixin carmodels {
      display: flex;
-     margin-bottom: 30px;
+     justify-content: space-between;
+     margin-bottom: 40px;
 
      & .car-model-box {
           height: 350px;
-          width: 360px;
-          box-shadow: -10px 10px 20px rgba(157, 157, 157, 0.5);
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 5px;
+          width: 31%;
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+          border-radius: 5px;
 
-          & img {
-               width: 100%;
+          & figure {
+               height: 220px;
+               position: relative;
+               overflow: hidden;
                border-top-left-radius: 5px;
                border-top-right-radius: 5px;
+
+               & img {
+                    width: 100%;
+                    height: 100%;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    transition: all 0.6s linear;
+               }
+
+               & figcaption {
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translateX(-100%);
+                    background: rgba(0, 0, 0, 0);
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    transition: all 0.5s linear;
+
+                    & i {
+                         position: absolute;
+                         color: $fcolor;
+                         font-size: 30px;
+                         top: 50%;
+                         left: 50%;
+                         transform: translateX(1500px);
+                         transition: all 0.5s ease-in-out;
+                    }
+               }
+
+               &:hover figcaption {
+                    background: rgba(0, 0, 0, 0.6);
+                    transform: translateX(0%);
+               }
+
+               &:hover i {
+                    transform: translateX(-10px);
+               }
+
+               &:hover img {
+                    transform: scale(1.1);
+
+               }
           }
 
           & .carname-price {
@@ -200,6 +237,7 @@ $anglecolor: rgb(74, 74, 74);
                     color: $b3color;
                     font-weight: 700;
                     font-size: 18px;
+                    margin-top: -4px;
                }
 
                & h6 {
@@ -236,3 +274,30 @@ $anglecolor: rgb(74, 74, 74);
 }
 
 /* end of different car model box design */
+
+
+/* trending box of international and indian in tours.html */
+@mixin trendingboxesnavigationicon {
+     background-color: $anglebackground;
+     width: 33px;
+     height: 33px;
+     border-radius: 50px !important;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     outline: none;
+}
+
+/* page banner in tours.html */
+@mixin autoslidernavigationicon {
+     background-color: $anglebackground;
+     font-size: 25px;
+     color: $anglecolor;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     height: 33px;
+     width: 33px;
+     border: none;
+     border-radius: 50px !important;
+}
